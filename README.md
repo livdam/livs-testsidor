@@ -1,7 +1,7 @@
 # Checklista vid postimport
 Beroende på vilka katalogiseringsregler som har använts i den post man önskar importera bör olika anvisningar följas: 
--	För poster gjorda enligt AACR2 följ riktlinjerna för [Minimikrav på importerade bibliografiska poster (http://www.kb.se/katalogisering/Katalogisering/Minimikrav-pa-importerade-bibliografiska-poster/)] i Katalogisatörens verktygslåda. 
--	För poster gjorda enligt RDA följ riktlinjerna för Importerade poster i Anvisningar för katalogisering (RDA) 
+-	För poster gjorda enligt AACR2 följ riktlinjerna för [Minimikrav på importerade bibliografiska poster] (http://www.kb.se/katalogisering/Katalogisering/Minimikrav-pa-importerade-bibliografiska-poster/) i Katalogisatörens verktygslåda. 
+-	För poster gjorda enligt RDA följ riktlinjerna för [Importerade poster http://www.kb.se/rdakatalogisering/Postimport/] i Anvisningar för katalogisering (RDA) 
 -	För preliminära poster följ riktlinjerna för Minimikrav vid uppgradering av förhandsposter och Förhandsposter från Bokinfo i Katalogisatörens verktygslåda 
 -	Vissa specifika anvisningar finns i Katalogisatörens verktygslåda under de enskilda MARC21-fälten inom Katalogisering och Bibliografiska formatet 
 Eftersom anvisningarna inte är anpassade till det nya katalogiseringsverktyget eller det nya formatet följer här en lista på de viktigaste sakerna att tänka på. 
