@@ -8,7 +8,7 @@ Beroende på vilka katalogiseringsregler som har använts i den post man önskar
 Eftersom anvisningarna inte är anpassade till det nya katalogiseringsverktyget eller det nya formatet följer här en lista på de viktigaste sakerna att tänka på. 
 OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna med den engelska benämningen. De får automatiskt den svenska benämningen efter att posten sparats. 
 ## Adminmetadata 
-Läs mer om egenskaperna under [Adminmetadata]. 
+Läs mer om egenskaperna under [Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata). 
 ### Beskrivningsnivå 
 Beskrivningsnivå (encodingLevel = 000/17) 
 Vid postimport händer det att egenskapen saknar värde eller saknas helt. 
@@ -56,7 +56,7 @@ Systemnummer från andra bibliotek, bibliotekskonsortier eller system (till exem
 ### marcuncompleted och marcfailedfixedfields 
 Data som inte hanteras av systemet visas i MARC21-format som marcuncompleted eller marcfailedfixedfields. Kontrollera om det innehåller information som bör vara med i beskrivningen och radera sedan uppgifterna.
 ## Instans 
-Läs mer om egenskaperna under [Instans]. 
+Läs mer om egenskaperna under [Instans](https://libris.kb.se/katalogisering/help/workflow-instance). 
 ### Titel 
 Har titel/… (hasTitle/… = 24X) 
 Kontrollera att beskrivningen är korrekt. 
@@ -106,20 +106,21 @@ Seriemedlemskap/Serieuppgift (seriesMembership/seriesStatement = 490 #a) och Ser
 När man redigerar importerade poster med två Seriemedlemskap kan man, om man bedömer det nödvändigt, slå ihop dem till ett. 
 OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på olika sätt i 490 och 830, dubbleras dessa inom Seriemedlemskapet. Radera en av de dubblerade ISSN- och/eller voIymbeteckningarna. 
 ## Instans av verk 
-Läs mer om egenskaperna under [Verk]. 
+Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
 ### Språk, litterär genre m.m. 
 Kontrollera att beskrivningen är korrekt. 
 OBS! Om egenskapen Språk (language = 008/35-37) saknas och läggs till via funktionen Berika från mall, länkas den automatiskt till svenska. Ändra vid behov. 
 ### Medverkan och funktion 
-Läs mer under [Relationer till Agent]. Tänk på att:  
--	Validera namnformer (skapa auktoriteter vid behov, enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf))  
--	Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
+Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
+Tänk på att:  
+-	Validera alltid namnformer och, vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf)  
+-	Lägga till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
 ### Uniforma titlar 
 Kontrollera att titelformen för eventuella uniforma titlar stämmer med svensk praxis.
 ### Svenska ämnesord och Genre/formtermer 
-Lägg till Svenska ämnesord och Genre/formtermer (enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf])) 
+Lägg till Svenska ämnesord och Genre/formtermer enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
 ### Klassifikation 
-Läs mer om Klassifikation i hjälptexten för [Verk]. 
+Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
 #### DDK-klassifikation 
 Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Efter kontroll ändra Parallell upplagebeteckning/Upplagespecifik upphovsuppgift till ”23/swe”. 
 OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. Om den saknas måste en ny DDK-kod läggas till: 
