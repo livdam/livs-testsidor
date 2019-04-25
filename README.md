@@ -1,9 +1,9 @@
 # Checklista vid postimport
 Beroende på vilka katalogiseringsregler som har använts i den post man önskar importera bör olika anvisningar följas: 
--	För poster gjorda enligt AACR2 följ riktlinjerna för [Minimikrav på importerade bibliografiska poster (http://www.kb.se/katalogisering/Katalogisering/Minimikrav-pa-importerade-bibliografiska-poster/] i Katalogisatörens verktygslåda. 
--	För poster gjorda enligt RDA följ riktlinjerna för [Importerade poster http://www.kb.se/rdakatalogisering/Postimport/] i Anvisningar för katalogisering (RDA) 
--	För preliminära poster följ riktlinjerna för [Minimikrav vid uppgradering av förhandsposter och Förhandsposter från Bokinfo http://www.kb.se/katalogisering/Katalogisering/Preliminara-poster/Uppgradering-Bokrondellen/] i Katalogisatörens verktygslåda 
--	Vissa specifika anvisningar finns i Katalogisatörens verktygslåda under de enskilda MARC21-fälten inom [Katalogisering http://www.kb.se/katalogisering/Katalogisering/] och [Bibliografiska formatet http://www.kb.se/katalogisering/Formathandboken/Bibliografiska-formatet/] 
+-	För poster gjorda enligt AACR2 följ riktlinjerna för [Minimikrav på importerade bibliografiska poster](http://www.kb.se/katalogisering/Katalogisering/Minimikrav-pa-importerade-bibliografiska-poster/] i Katalogisatörens verktygslåda. 
+-	För poster gjorda enligt RDA följ riktlinjerna för [Importerade poster](http://www.kb.se/rdakatalogisering/Postimport/) i Anvisningar för katalogisering (RDA) 
+-	För preliminära poster följ riktlinjerna för [Minimikrav vid uppgradering av förhandsposter och Förhandsposter från Bokinfo](http://www.kb.se/katalogisering/Katalogisering/Preliminara-poster/Uppgradering-Bokrondellen/) i Katalogisatörens verktygslåda 
+-	Vissa specifika anvisningar finns i Katalogisatörens verktygslåda under de enskilda MARC21-fälten inom [Katalogisering](http://www.kb.se/katalogisering/Katalogisering/) och [Bibliografiska formatet](http://www.kb.se/katalogisering/Formathandboken/Bibliografiska-formatet/) 
 
 Eftersom anvisningarna inte är anpassade till det nya katalogiseringsverktyget eller det nya formatet följer här en lista på de viktigaste sakerna att tänka på. 
 OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna med den engelska benämningen. De får automatiskt den svenska benämningen efter att posten sparats. 
@@ -112,12 +112,12 @@ Kontrollera att beskrivningen är korrekt.
 OBS! Om egenskapen Språk (language = 008/35-37) saknas och läggs till via funktionen Berika från mall, länkas den automatiskt till svenska. Ändra vid behov. 
 ### Medverkan och funktion 
 Läs mer under [Relationer till Agent]. Tänk på att:  
--	Validera namnformer (skapa auktoriteter vid behov, enligt Riktlinjer för löpande auktoritetsarbete i Libris) 
+-	Validera namnformer (skapa auktoriteter vid behov, enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf))  
 -	Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
 ### Uniforma titlar 
 Kontrollera att titelformen för eventuella uniforma titlar stämmer med svensk praxis.
 ### Svenska ämnesord och Genre/formtermer 
-Lägg till Svenska ämnesord och Genre/formtermer (enligt [Riktlinjer för indexering med Svenska ämnesord http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
+Lägg till Svenska ämnesord och Genre/formtermer (enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf])) 
 ### Klassifikation 
 Läs mer om Klassifikation i hjälptexten för [Verk]. 
 #### DDK-klassifikation 
