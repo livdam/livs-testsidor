@@ -96,6 +96,7 @@ I andra fall finns endast entiteten Utgivning med (beror på att typ av utgivnin
 - Klicka på plustecknet Lägg till entitet vid Utgivning 
 - Välj typ Primär utgivning 
 - Fyll i uppgifterna i Primär utgivning och ta sedan bort Utgivning  
+
 Vid postimport förekommer ibland både År och Copyrightår inom Primär utgivning (008/06: t, 008/07-10: År och 008/11-14: Copyrightår). Låt uppgiften ligga kvar oförändrad. Ej att förväxla med egenskapen Copyright/Copyright/Datum (264 -/4 #c). 
 
 OBS! Om egenskapen Utgivning/Primär utgivning saknas och läggs till via funktionen Berika från mall, länkas utgivningslandet automatiskt till Sverige. Ändra vid behov. 
@@ -137,9 +138,8 @@ Kontrollera att beskrivningen är korrekt.
 OBS! Om egenskapen Språk (language = 008/35-37) saknas och läggs till via funktionen Berika från mall, länkas den automatiskt till svenska. Ändra vid behov. 
 ### Medverkan och funktion 
 Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
-Tänk på att:  
 - Validera alltid namnformer och, vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf)  
-- Lägga till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
+- Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
 ### Uniforma titlar 
 Kontrollera att titelformen för eventuella uniforma titlar stämmer med svensk praxis.
 ### Svenska ämnesord och Genre/formtermer 
