@@ -3,7 +3,7 @@ Beroende på vilka katalogiseringsregler som har använts i den post man importe
 - För poster gjorda enligt AACR2 följ riktlinjerna för [Minimikrav på importerade bibliografiska poster](http://www.kb.se/katalogisering/Katalogisering/Minimikrav-pa-importerade-bibliografiska-poster/) i Katalogisatörens verktygslåda. 
 - För poster gjorda enligt RDA följ riktlinjerna för [Importerade poster](http://www.kb.se/rdakatalogisering/Postimport/) i Anvisningar för katalogisering (RDA) 
 
-Vissa specifika anvisningar hittas i Katalogisatörens verktygslåda under de enskilda MARC21-fälten inom [Katalogisering](http://www.kb.se/katalogisering/Katalogisering/) och [Bibliografiska formatet](http://www.kb.se/katalogisering/Formathandboken/Bibliografiska-formatet/) 
+Ytterligare anvisningar hittas även i Katalogisatörens verktygslåda under de enskilda MARC21-fälten inom [Katalogisering](http://www.kb.se/katalogisering/Katalogisering/) och [Bibliografiska formatet](http://www.kb.se/katalogisering/Formathandboken/Bibliografiska-formatet/) 
 
 Eftersom anvisningarna inte är anpassade till det nya katalogiseringsverktyget eller det nya formatet följer här en lista på de viktigaste sakerna att tänka på. 
 
