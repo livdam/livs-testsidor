@@ -1,5 +1,5 @@
 # Checklista vid redigering av importerade poster
-För allmän information om postimport se  under [Andra källor](https://libris.kb.se/katalogisering/help/search-import) och [Sök](https://libris.kb.se/katalogisering/help/search-01-queries). 
+För allmän information om postimport läs under [Andra källor](https://libris.kb.se/katalogisering/help/search-import) och [Sök](https://libris.kb.se/katalogisering/help/search-01-queries). 
 
 Beroende på vilka katalogiseringsregler som har använts i den post man importerat bör olika anvisningar följas: 
 - För poster gjorda enligt AACR2 följ riktlinjerna för [Minimikrav på importerade bibliografiska poster](http://www.kb.se/katalogisering/Katalogisering/Minimikrav-pa-importerade-bibliografiska-poster/) i Katalogisatörens verktygslåda. 
