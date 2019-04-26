@@ -12,6 +12,7 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 Läs mer om egenskaperna under [Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata). 
 ### Beskrivningsnivå 
 Beskrivningsnivå (encodingLevel = 000/17) 
+
 Vid postimport händer det att egenskapen saknar värde eller saknas helt. 
 Om egenskapen finns men saknar värde: 
 - Välj värde från listan 
@@ -20,9 +21,11 @@ Om egenskapen saknas:
 - Välj typ Beskrivningsnivå och välj värde från lista 
 ### Skapad av 
 Skapad av/Organisation/Namn (descriptionCreator/Organization/name = 040 #a) 
+
 Förval vid postimport: den sigel som importerat posten. 
 ### Uppgraderad eller importerad av 
 Uppgraderad eller importerad av/Bibliotek/Sigel (descriptionUpgrader/Library/sigel = 040 #d) 
+
 Lägg alltid till uppgiften vid postimport. För att lägga till egenskapen: 
 - Klicka på plustecknet Lägg till egenskaper under: Post och välj Uppgraderad eller importerad av 
 - Klicka på plustecknet Lägg till entitet och välj Skapa lokal entitet 
@@ -32,6 +35,7 @@ Lägg även till sigel om ett annat bibliotek har importerat posten men du uppgr
 OBS! Egenskapen kan inte läggas till via funktionen Berika från mall. 
 ### Katalogiseringsregler 
 Katalogiseringsregler (040 #e) 
+
 Vid postimport behöver katalogiseringsreglerna inte ändras till RDA men väljer man att göra det måste hela beskrivningen anpassas till RDA. 
 
 OBS! Om egenskapen Katalogiseringsregler saknas och läggs till via funktionen Berika från mall, blir katalogiseringsreglerna automatiskt RDA. 
@@ -39,24 +43,29 @@ OBS! Om egenskapen Katalogiseringsregler saknas och läggs till via funktionen B
 OBS! Läggs Katalogiseringsregler/RDA till för hand måste även egenskapen ”ISBD-interpunktion finns” läggas till. 
 ### Katalogiseringsspråk 
 Katalogiseringsspråk (descriptionLanguage = 040 #b) 
+
 Anges vid katalogisering enligt RDA. Låt uppgiften stå. 
 
 OBS! Om egenskapen läggs till med funktionen Berika från mall blir katalogiseringsspråket automatiskt angivet som svenska. Radera eller ändra vid behov. 
 ### Katalogiserande instans 
 Katalogiserande instans (marc:catalogingSource = 008/39) 
+
 Ändra inte postens ursprungliga kod. Saknas egenskapen: 
 - Klicka på plustecknet Lägg till egenskaper under: Post 
 - Välj Katalogiserande instans 
 - Klicka på plustecknet Lägg till entitet, sök fram och välj Annan verksamhet, d 
 ### Systemteknisk anmärkning 
 Systemteknisk anmärkning/Benämning (technicalNote/label = 599 #a) 
+
 - Låt anmärkningen om vilken källa posten importerats från ligga kvar 
 - Vid uppgradering av förhandsposter och preliminära poster (då Beskrivningsnivån uppgraderas), ta bort anmärkningen om att posten är maskinellt skapad 
 ### Entry map 
 Entry map (marc:entryMap = 000/20-23) 
+
 Kan förekomma i vissa importerade poster. Radera egenskapen. 
 ### Systemnummer 
 Identifikator/Lokal identifikator/Värde (035 #a) 
+
 Systemnummer från andra bibliotek, bibliotekskonsortier eller system (till exempel Bokinfos systemnummer) kan förekomma. Låt uppgiften stå. 
 ### marcuncompleted och marcfailedfixedfields 
 Data som inte hanteras av systemet visas i MARC21-format som marcuncompleted eller marcfailedfixedfields. Kontrollera om det innehåller information som bör vara med i beskrivningen och radera sedan uppgifterna.
@@ -64,6 +73,7 @@ Data som inte hanteras av systemet visas i MARC21-format som marcuncompleted ell
 Läs mer om egenskaperna under [Instans](https://libris.kb.se/katalogisering/help/workflow-instance). 
 ### Titel 
 Har titel/… (hasTitle/… = 24X) 
+
 Kontrollera att beskrivningen är korrekt. 
 
 OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. 
@@ -73,11 +83,13 @@ För att kontrollera om det är korrekt ställ markören på Övrig titelinforma
 - Radera Övrig titelinformation/titleRemainder 
 ### Upphovsuppgift 
 Upphovsuppgift (responsibilityStatement = 245 #c) 
+
 Vid postimport saknas ibland upphovsuppgiften. Om egenskapen saknas: 
 - Klicka på Lägg till egenskaper under: Instans 
 - Välj Upphovsuppgift och fyll i uppgiften 
 ### Utgivning 
 Utgivning (publication = 008/07-10, 008/15-17, 260, 264 -/1) 
+
 Vid postimport medföljer ibland två avsnitt: Primär utgivning med År och Land, och Utgivning med Plats, Agent och Datum (beror på att årtal i 008 avviker från årtal i 264). Vid redigering: 
 - Flytta, om det bedöms nödvändigt, uppgifterna om Plats, Agent och Datum till Primär utgivning och ta bort Utgivning 
 I andra fall finns endast entiteten Utgivning med (beror på att typ av utgivningsdatum i 008 saknas). Vid redigering: 
@@ -100,6 +112,7 @@ Radera uppgifterna:
 Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 #a) och Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 #z) 
 
 OBS! Måste ses över! Anvisningarna nedan är upprättade med tanke på matchningsproblematik vid automatiska flöden. Behov av att kunna lägga felaktiga ISBN i Indirekt identifierad av finns. 
+
 Vid import från Andra källor kan posterna ibland innehålla flera olika ISBN, både för tryckt och elektronisk utgåva. För att inte skapa problem i Libris importflöden är det viktigt att tänka på följande: 
 - Endast ISBN för den beskrivna utgåvan ska ligga i Identifikator/ISBN/Värde (020 #a). Låt endast värden för två utgåvor ligga kvar om det ena syftar på inbunden och det andra på häftad utgåva. 
 -	För en tryckt bok får det inte finnas ISBN för en annan tryckt version i Indirekt identifierad av/ISBN/Värde (020 #z), utan enbart i Identifierad av/ISBN/Värde (020 #a). Flytta ISBN för tryckta versioner till Identifierad av och låt ISBN för elektroniska versioner ligga kvar under Indirekt identifierad av. 
