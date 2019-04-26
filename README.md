@@ -66,7 +66,7 @@ Kan förekomma i vissa importerade poster. Radera egenskapen.
 ### Systemnummer 
 Identifikator/Lokal identifikator/Värde (035 #a) 
 
-Systemnummer från andra bibliotek, bibliotekskonsortier eller system (till exempel Bokinfos systemnummer) kan förekomma. Låt uppgiften stå. 
+Systemnummer från andra bibliotek eller bibliotekskonsortier kan förekomma. Låt uppgiften stå. 
 ### marcuncompleted och marcfailedfixedfields 
 Data som inte hanteras av systemet visas i MARC21-format som marcuncompleted eller marcfailedfixedfields. Kontrollera om det innehåller information som bör vara med i beskrivningen och radera sedan uppgifterna.
 ## Instans 
