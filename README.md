@@ -12,7 +12,7 @@ Eftersom anvisningarna inte är anpassade till det nya katalogiseringsverktyget 
 OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna med den engelska benämningen. De får automatiskt den svenska benämningen efter att posten sparats. 
 ## Adminmetadata 
 Läs mer om egenskaperna under [Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata). 
-### Beskrivningsnivå 
+### Beskrivningsniva 
 Beskrivningsnivå (encodingLevel = 000/17) 
 
 Vid postimport händer det att egenskapen saknar värde eller saknas helt. 
@@ -43,7 +43,7 @@ Vid postimport behöver katalogiseringsreglerna inte ändras till RDA men välje
 OBS! Om egenskapen Katalogiseringsregler saknas och läggs till via funktionen Berika från mall, blir katalogiseringsreglerna automatiskt RDA. 
 
 OBS! Läggs Katalogiseringsregler/RDA till för hand måste även egenskapen ”ISBD-interpunktion finns” läggas till. 
-### Katalogiseringsspråk 
+### Katalogiseringssprak 
 Katalogiseringsspråk (descriptionLanguage = 040 #b) 
 
 Anges vid katalogisering enligt RDA. Låt uppgiften stå. 
@@ -56,7 +56,7 @@ Katalogiserande instans (marc:catalogingSource = 008/39)
 - Klicka på plustecknet Lägg till egenskaper under: Post 
 - Välj Katalogiserande instans 
 - Klicka på plustecknet Lägg till entitet, sök fram och välj Annan verksamhet, d 
-### Systemteknisk anmärkning 
+### Systemteknisk anmarkning 
 Systemteknisk anmärkning/Benämning (technicalNote/label = 599 #a) 
 
 - Låt anmärkningen om vilken källa posten importerats från ligga kvar 
@@ -103,13 +103,13 @@ I andra fall finns endast entiteten Utgivning med. Vid redigering:
 Vid postimport förekommer ibland både År och Copyrightår inom Primär utgivning (= 008/06: t, 008/07-10: År och 008/11-14: Copyrightår). Låt uppgiften ligga kvar oförändrad. Ej att förväxla med egenskapen Copyright/Copyright/Datum (= 264 -/4 #c). 
 
 OBS! Om egenskapen Utgivning/Primär utgivning saknas och läggs till via funktionen Berika från mall, länkas utgivningslandet automatiskt till Sverige. Ändra vid behov. 
-### Förväntad utgivningstid 
+### Forvantad utgivningstid 
 Förväntad utgivningstid (projectedProvisionDate = 263)
 
 Kan förekomma i preliminära poster. Radera egenskapen. 
-### Omfång, övriga fysiska detaljer, mått 
+### Omfang, oövriga fysiska detaljer, matt 
 Kontrollera att beskrivningen är korrekt. 
-### Egenskaper som länkar till andra databaser och instanser som inte finns i Libris 
+### Egenskaper som lankar till andra databaser och instanser som inte finns i Libris 
 Låt uppgifterna stå: 
 - Tillhörande media/Mediaobjekt (associatedMedia/Mediaobject = 856 4/0) 
 - Annan relaterad resurs/Elektronisk (marc:versionOfResource/Electronic = 856 4/1) 
@@ -139,7 +139,7 @@ När man redigerar importerade poster med två Seriemedlemskap kan man, om man b
 OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på olika sätt i 490 och 830, dubbleras dessa inom Seriemedlemskapet. Radera en av de dubblerade ISSN- och/eller voIymbeteckningarna. 
 ## Instans av verk 
 Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
-### Språk, litterär genre m.m. 
+### Sprak, litterar genre m.m. 
 Kontrollera att beskrivningen är korrekt. 
 
 OBS! Om egenskapen Språk (language = 008/35-37) saknas och läggs till via funktionen Berika från mall, länkas den automatiskt till svenska. Ändra vid behov. 
@@ -147,9 +147,9 @@ OBS! Om egenskapen Språk (language = 008/35-37) saknas och läggs till via funk
 Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
 - Validera alltid namnformer och, vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf)  
 - Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
-### Uniforma titlar 
-Kontrollera att titelformen för eventuella uniforma titlar stämmer med svensk praxis.
-### Svenska ämnesord och Genre/formtermer 
+### Foredragen titel 
+Kontrollera att titelformen för föredragen titel stämmer med svensk praxis.
+### Svenska amnesord och Genre/formtermer 
 Lägg till Svenska ämnesord och Genre/formtermer enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
 ### Klassifikation 
 Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
