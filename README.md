@@ -106,7 +106,7 @@ OBS! Om egenskapen Utgivning/Primär utgivning saknas och läggs till via funkti
 ### Förväntad utgivningstid 
 Förväntad utgivningstid (projectedProvisionDate = 263)
 
-Kan förekomma i vissa importerade poster. Radera egenskapen. 
+Kan förekomma i preliminära poster. Radera egenskapen. 
 ### Omfång, övriga fysiska detaljer, mått 
 Kontrollera att beskrivningen är korrekt. 
 ### Egenskaper som länkar till andra databaser och instanser som inte finns i Libris 
