@@ -118,6 +118,7 @@ Radera uppgifterna:
 - Beskriven av/Post/Kontrollnummer (= #w). Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
 ### Identifikator och Indirekt identifierad av 
 Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 #a) 
+
 Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 #z) 
 
 OBS! Måste ses över! Anvisningarna nedan är upprättade med tanke på matchningsproblematik vid automatiska flöden. Behov av att kunna lägga felaktiga ISBN i Indirekt identifierad av finns. 
@@ -132,6 +133,7 @@ Vid import från Andra källor kan posterna ibland innehålla flera olika ISBN, 
 OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast de som hör till resursen som ska katalogiseras vara kvar. 
 ### Seriemedlemskap 
 Seriemedlemskap/Serieuppgift (seriesMembership/seriesStatement = 490 #a) 
+
 Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (seriesMembership/inSeries/InstanceofWork/Work/hasTitle/Title/mainTitle = 830 #a) 
 - Om motsvarande fält 490 #a och 830 #a matchar, läggs de vid import i samma Seriemedlemskap. 
 - Om de inte matchar, skapas två Seriemedlemskap: ett med enbart Seriemedlemskap/Serieuppgift (490 #a) och ett med enbart Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (830 #a). 
