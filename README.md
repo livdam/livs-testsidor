@@ -153,12 +153,11 @@ Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/
 - Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
 ### Foredragen titel 
 Kontrollera att titelformen för föredragen titel stämmer med svensk praxis.
-### Genre/form
-Genre (= koder i 008):  
-- Kontrollera att de länkade entiteterna är korrekta 
-
-Genre/form (= genre/form-termer enligt Svenska ämnesord): 
-- Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
+### Genre
+#### Termer som motsvarar marc-koder i 008 
+Kontrollera att de länkade entiteterna är korrekta (Litterär genre, Festskrift m.m.) 
+#### Genre/formtermer enligt Svenska ämnesord 
+Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
 ### Amne 
 Läs mer om [Ämnesord i Libris](https://libris.kb.se/katalogisering/help/workflow-general-sh) 
 #### Svenska ämnesord 
