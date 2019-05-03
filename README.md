@@ -117,7 +117,8 @@ Låt uppgifterna stå:
 Radera uppgifterna: 
 - Beskriven av/Post/Kontrollnummer (= #w). Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
 ### Identifikator och Indirekt identifierad av 
-Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 #a) och Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 #z) 
+Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 #a) 
+Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 #z) 
 
 OBS! Måste ses över! Anvisningarna nedan är upprättade med tanke på matchningsproblematik vid automatiska flöden. Behov av att kunna lägga felaktiga ISBN i Indirekt identifierad av finns. 
 
@@ -130,7 +131,8 @@ Vid import från Andra källor kan posterna ibland innehålla flera olika ISBN, 
 
 OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast de som hör till resursen som ska katalogiseras vara kvar. 
 ### Seriemedlemskap 
-Seriemedlemskap/Serieuppgift (seriesMembership/seriesStatement = 490 #a) och Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (seriesMembership/inSeries/InstanceofWork/Work/hasTitle/Title/mainTitle = 830 #a) 
+Seriemedlemskap/Serieuppgift (seriesMembership/seriesStatement = 490 #a) 
+Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (seriesMembership/inSeries/InstanceofWork/Work/hasTitle/Title/mainTitle = 830 #a) 
 - Om motsvarande fält 490 #a och 830 #a matchar, läggs de vid import i samma Seriemedlemskap. 
 - Om de inte matchar, skapas två Seriemedlemskap: ett med enbart Seriemedlemskap/Serieuppgift (490 #a) och ett med enbart Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (830 #a). 
 
@@ -149,9 +151,18 @@ Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/
 - Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
 ### Foredragen titel 
 Kontrollera att titelformen för föredragen titel stämmer med svensk praxis.
-### Svenska amnesord och Genre/formtermer 
-Komplettera med tillämpliga ämnesord och termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
-Validera namnformer
+### Genre/form
+Genre (= koder i 008):  
+- Kontrollera att de länkade entiteterna är korrekta 
+
+Genre/form (= genre/form-termer enligt Svenska ämnesord): 
+- Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
+### Amne 
+Läs mer om [Ämnesord i Libris](https://libris.kb.se/katalogisering/help/workflow-general-sh) 
+#### Svenska ämnesord 
+Komplettera med tillämpliga ämnesord enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]). 
+#### Agenter som ämnesord
+Validera namnformer. 
 ### Klassifikation 
 Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
 #### DDK-klassifikation 
