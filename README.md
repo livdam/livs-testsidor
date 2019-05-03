@@ -198,21 +198,25 @@ Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/w
 
 ### Sprak
 **Språk** 
+
 Språk (language = 008/35-37 och 040 #a) 
 
 Kontrollera att beskrivningen är korrekt. 
 
 OBS! Om egenskapen Språk saknas och läggs till via funktionen Berika från mall, länkas den automatiskt till svenska. Ändra vid behov. 
 **Originalversion** 
+
 Originalversion/Verk/Språk (originalversion/Work/language = 041 #h) 
 
 Kontrollera att beskrivningen är korrekt. 
 
 ### Genre 
 **Termer som motsvarar marc-koder i 008** 
+
 Kontrollera att de länkade entiteterna är korrekta (Litterär genre, Festskrift m.m.) 
 
 **Genre/formtermer enligt Svenska ämnesord** 
+
 Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
 
 ### Medverkan och funktion 
