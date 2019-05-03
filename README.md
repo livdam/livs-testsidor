@@ -28,7 +28,7 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ----------- |  ----------- | ----------- | 
 |  [Generell hjälptext för Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) | [Generell hjälptext för Instans](https://libris.kb.se/katalogisering/help/workflow-instance) | [Generell hjälptext för Verk](https://libris.kb.se/katalogisering/help/workflow-work) |
-| [Beskrivningsnivå](#beskrivningsniva) | [Titel](#titel) | [Språk och litterär genre](#sprak-och-litterar-genre) |
+| [Beskrivningsnivå](#beskrivningsniva) | [Titel](#titel) | [Språk och litterär genre](#sprak) |
 | [Skapad av](#skapad-av) | [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
 | [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Utgivning](#utgivning) | [Föredragen titel](#foredragen-titel) |
 | [Katalogiseringsregler](#katalogiseringsregler) | [Forväntad utgivningstid](#forvantad-utgivningstid) |  [Svenska amnesord och genre](#svenska-amnesord-och-genre) |
