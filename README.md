@@ -28,20 +28,25 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ----------- |  ----------- | ----------- | 
 |  [Generell hjälptext för Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) | [Generell hjälptext för Instans](https://libris.kb.se/katalogisering/help/workflow-instance) | [Generell hjälptext för Verk](https://libris.kb.se/katalogisering/help/workflow-work) |
-| [Beskrivningsnivå](#beskrivningsniva) | [Titel](#titel) | [Föredragen titel](#foredragen-titel) |
-| [Skapad av](#skapad-av) | [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Utgivning](#utgivning) | [Språk](#sprak) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Forväntad utgivningstid](#forvantad-utgivningstid) |  [Genre](#genre) |
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Ämne](#amne) | 
-| [Katalogiserande instans](#katalogiserande-instans) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) | [Klassifikation](#klassifikation) |
-| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | |
-| [Entry map](#entry-map) | [Seriemedlemskap](#seriemedlemskap) | | 
-| [Systemnummer](#systemnummer) | | | 
-| [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) | | |
+| [Identifikator](identifikator) | [Titel](#titel) | [Föredragen titel](#foredragen-titel) |
+| [Beskrivningsnivå](#beskrivningsniva)| [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
+| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Utgivning](#utgivning) | [Medverkan och funktion](#medverkan-och-funktion) |
+| [Skapad av](#skapad-av) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Språk](#sprak) |
+| [Entry map](#entry-map) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Genre](#genre) |
+| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Ämne](#amne) |
+| [Katalogiseringsregler](#katalogiseringsregler) | [Seriemedlemskap](#seriemedlemskap) |  | 
+| [Katalogiseringsspråk](#katalogiseringssprak) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) | [Klassifikation](#klassifikation) |
+| [Katalogiserande instans](#katalogiserande-instans) |  |  |
+| [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) |  |  | 
 
 
 ## Adminmetadata 
 Läs mer om egenskaperna under [Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata). 
+
+### Identifikator 
+Identifikator/Lokal identifikator/Värde (identifiedBy/SystemNumber/value = 035 #a) 
+
+Systemnummer från andra bibliotek eller bibliotekskonsortier kan förekomma. Låt uppgiften stå 
 
 ### Beskrivningsniva
 Beskrivningsnivå (encodingLevel = 000/17) 
@@ -53,10 +58,21 @@ Om egenskapen saknas:
 - Klicka på plustecknet Lägg till egenskaper under: Post 
 - Välj typ Beskrivningsnivå och välj värde från lista  
 
+### Systemteknisk anmarkning 
+Systemteknisk anmärkning/Benämning (technicalNote/label = 599 #a) 
+
+- Låt anmärkningen om vilken källa posten importerats från ligga kvar 
+- Vid uppgradering av förhandsposter och preliminära poster (då Beskrivningsnivån uppgraderas), ta bort anmärkningen om att posten är maskinellt skapad 
+
 ### Skapad av 
 Skapad av/Organisation/Namn (descriptionCreator/Organization/name = 040 #a) 
  
-Förval vid postimport: den sigel som importerat posten.   
+Förval vid postimport: den sigel som importerat posten.  
+
+### Entry map 
+Entry map (marc:entryMap = 000/20-23) 
+
+Kan förekomma i vissa importerade poster. Radera egenskapen. 
 
 ### Uppgraderad eller importerad av 
 Uppgraderad eller importerad av/Bibliotek/Sigel (descriptionUpgrader/Library/sigel = 040 #d) 
@@ -92,22 +108,6 @@ Katalogiserande instans (marc:catalogingSource = 008/39)
 - Klicka på plustecknet Lägg till egenskaper under: Post 
 - Välj Katalogiserande instans 
 - Klicka på plustecknet Lägg till entitet, sök fram och välj Annan verksamhet.
-
-### Systemteknisk anmarkning 
-Systemteknisk anmärkning/Benämning (technicalNote/label = 599 #a) 
-
-- Låt anmärkningen om vilken källa posten importerats från ligga kvar 
-- Vid uppgradering av förhandsposter och preliminära poster (då Beskrivningsnivån uppgraderas), ta bort anmärkningen om att posten är maskinellt skapad 
-
-### Entry map 
-Entry map (marc:entryMap = 000/20-23) 
-
-Kan förekomma i vissa importerade poster. Radera egenskapen. 
-
-### Systemnummer 
-Identifikator/Lokal identifikator/Värde (035 #a) 
-
-Systemnummer från andra bibliotek eller bibliotekskonsortier kan förekomma. Låt uppgiften stå. 
 
 ### marcuncompleted och marcfailedfixedfields 
 Data som inte hanteras av systemet visas i MARC21-format som marcuncompleted eller marcfailedfixedfields. Kontrollera om det innehåller information som bör vara med i beskrivningen och radera sedan uppgifterna.
