@@ -153,19 +153,6 @@ Förväntad utgivningstid (projectedProvisionDate = 263)
 
 Kan förekomma i preliminära poster. Radera egenskapen.  
 
-### Omfang
-**Omfång, övriga fysiska detaljer, mått**  
-Kontrollera att beskrivningen är korrekt. 
-
-### Andra databaser
-**Egenskaper som länkar till andra databaser och instanser som inte finns i Libris**  
-Låt uppgifterna stå:  
-- Tillhörande media/Mediaobjekt (associatedMedia/Mediaobject = 856 4/0) 
-- Annan relaterad resurs/Elektronisk (marc:versionOfResource/Electronic = 856 4/1) 
-- Relaterad beskrivning eller innehåll/Dokument (isPrimaryTopicOf/Document = 856 4/2)  
-Radera uppgifterna: 
-- Beskriven av/Post/Kontrollnummer (= #w).Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
-
 ### Identifikator och Indirekt identifierad av 
 Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 #a) 
 
@@ -182,6 +169,10 @@ Vid import från Andra källor kan posterna ibland innehålla flera olika ISBN, 
 
 OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast de som hör till resursen som ska katalogiseras vara kvar. 
 
+### Omfang
+**Omfång, övriga fysiska detaljer, mått**  
+Kontrollera att beskrivningen är korrekt. 
+
 ### Seriemedlemskap 
 Seriemedlemskap/Serieuppgift (seriesMembership/seriesStatement = 490 #a)
 
@@ -192,6 +183,15 @@ Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (
 När man redigerar importerade poster med två Seriemedlemskap kan man, om man bedömer det nödvändigt, slå ihop dem till ett. 
 
 OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på olika sätt i 490 och 830, dubbleras dessa inom Seriemedlemskapet. Radera en av de dubblerade ISSN- och/eller voIymbeteckningarna.  
+
+### Andra databaser
+**Egenskaper som länkar till andra databaser och instanser som inte finns i Libris**  
+Låt uppgifterna stå:  
+- Tillhörande media/Mediaobjekt (associatedMedia/Mediaobject = 856 4/0) 
+- Annan relaterad resurs/Elektronisk (marc:versionOfResource/Electronic = 856 4/1) 
+- Relaterad beskrivning eller innehåll/Dokument (isPrimaryTopicOf/Document = 856 4/2)  
+Radera uppgifterna: 
+- Beskriven av/Post/Kontrollnummer (= #w).Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
 
 ## Instans av verk  
 Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
@@ -230,12 +230,13 @@ Kontrollera att de länkade entiteterna är korrekta (Litterär genre, Festskrif
 Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
 
 ### Amne 
+**Ämnesord** 
 Läs mer om [Ämnesord i Libris](https://libris.kb.se/katalogisering/help/workflow-general-sh) 
 
-#### Svenska ämnesord 
+#### - Svenska ämnesord 
 Komplettera med tillämpliga ämnesord enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]). 
 
-#### Agenter som ämne
+#### - Agenter som ämne
 Läs mer om agenter som ämne i hjälptexten [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
 
 Validera namnformer. 
@@ -243,7 +244,7 @@ Validera namnformer.
 ### Klassifikation 
 Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
 
-#### DDK-klassifikation 
+#### - DDK-klassifikation 
 Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Efter kontroll ändra Parallell upplagebeteckning/Upplagespecifik upphovsuppgift till ”23/swe”. 
 
 OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. Om den saknas måste en ny DDK-kod läggas till: 
@@ -251,7 +252,7 @@ OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. 
 - Välj Skapa lokal entitet och välj DDK-klassifikation 
 - Fyll i uppgifterna och radera den ofullständiga DDK-klassifikationen 
 
-#### SAB-klassifikation 
+#### - SAB-klassifikation 
 För att lägga till klassifikationskod: 
 - Klicka på Lägg till entitet (plustecknet vid Klassifikation) 
 - Välj Skapa lokal entitet och välj Klassifikation 
