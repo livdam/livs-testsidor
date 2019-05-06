@@ -32,12 +32,12 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Beskrivningsnivå](#beskrivningsniva)| [Medietyp och bärartyp](medietyp-och-barartyp) | [Medverkan och funktion](#medverkan-och-funktion) |
 | [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Titel](#titel) | [Språk](#sprak) |
 | [Skapad av](#skapad-av) | [Upphovsuppgift](#upphovsuppgift) | [Genre](#genre) |
-| [Entry map](#entry-map) | [Utgivning](#utgivning)[Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Ämne](#amne) |
+| [Entry map](#entry-map) | [Utgivning](#utgivning) | [Ämne](#amne) |
 | [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Klassifikation](#klassifikation) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Innehållstyp](innehallstyp) | 
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Seriemedlemskap](#seriemedlemskap) |  |
-| [Katalogiserande instans](#katalogiserande-instans) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  |
-| [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) |  |  | 
+| [Katalogiseringsregler](#katalogiseringsregler) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Innehållstyp](innehallstyp) | 
+| [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) |  |
+| [Katalogiserande instans](#katalogiserande-instans) | [Seriemedlemskap](#seriemedlemskap) |  |
+| [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  | 
 
 
 ## Adminmetadata 
