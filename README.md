@@ -28,15 +28,15 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ----------- |  ----------- | ----------- | 
 |  [Generell hjälptext för Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) | [Generell hjälptext för Instans](https://libris.kb.se/katalogisering/help/workflow-instance) | [Generell hjälptext för Verk](https://libris.kb.se/katalogisering/help/workflow-work) |
-| [Identifikator](identifikator) | [Titel](#titel) | [Föredragen titel](#foredragen-titel) |
-| [Beskrivningsnivå](#beskrivningsniva)| [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Utgivning](#utgivning) | [Språk](#sprak) |
-| [Skapad av](#skapad-av) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Genre](#genre) |
-| [Entry map](#entry-map) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Ämne](#amne) |
-| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Klassifikation](#klassifikation) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Seriemedlemskap](#seriemedlemskap) |  | 
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  |
-| [Katalogiserande instans](#katalogiserande-instans) |  |  |
+| [Identifikator](identifikator) | [Utgivningssätt](utgivningssatt) | [Föredragen titel](#foredragen-titel) |
+| [Beskrivningsnivå](#beskrivningsniva)| [Medietyp och bärartyp](medietyp-och-barartyp) | [Medverkan och funktion](#medverkan-och-funktion) |
+| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Titel](#titel) | [Språk](#sprak) |
+| [Skapad av](#skapad-av) | [Upphovsuppgift](#upphovsuppgift) | [Genre](#genre) |
+| [Entry map](#entry-map) | [Utgivning](#utgivning)[Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Ämne](#amne) |
+| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Klassifikation](#klassifikation) |
+| [Katalogiseringsregler](#katalogiseringsregler) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Innehållstyp](innehallstyp) | 
+| [Katalogiseringsspråk](#katalogiseringssprak) | [Seriemedlemskap](#seriemedlemskap) |  |
+| [Katalogiserande instans](#katalogiserande-instans) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  |
 | [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) |  |  | 
 
 
@@ -114,6 +114,20 @@ Data som inte hanteras av systemet visas i MARC21-format som marcuncompleted ell
 
 ## Instans 
 Läs mer om egenskaperna under [Instans](https://libris.kb.se/katalogisering/help/workflow-instance). 
+
+### Utgivningssatt
+Utgivningssätt (issuanceType) 
+
+Kontrollera att beskrivningen är korrekt. 
+
+### Medietyp och barartyp 
+Medietyp (mediaType/Mediatype = 337 #b) 
+
+Bärartyp (carrierType/CarrierType = 338 #b) 
+
+Kontrollera att beskrivningen är korrekt. 
+
+OBS! Entiteterna behöver inte länkas. Länk skapas automatiskt då instansen sparas.  
 
 ### Titel 
 Har titel/… (hasTitle/… = 24X) 
@@ -257,3 +271,10 @@ För att lägga till klassifikationskod:
 - Klicka på Lägg till entitet (plustecknet vid Klassifikation) 
 - Välj Skapa lokal entitet och välj Klassifikation 
 - Fyll i uppgifterna 
+
+### Innehallstyp 
+Innehållstyp/Innehållstyp (contentType/ContentType = 336 #b) 
+
+Kontrollera att beskrivningen är korrekt. 
+
+OBS! Entiteterna behöver inte länkas. Länk skapas automatiskt då instansen sparas.
