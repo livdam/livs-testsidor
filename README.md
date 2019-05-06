@@ -11,7 +11,7 @@ order: 12
 
 # Checklista vid redigering av importerade poster
 
-Denna checklista kan användas vid redigering av importerade poster från Andra källor.  
+Denna checklista kan användas vid redigering av importerade poster från andra källor.  
 
 Beroende på vilka katalogiseringsregler som har använts i den post man importerat bör olika anvisningar följas: 
 - För poster gjorda enligt AACR2, följ riktlinjerna för [Minimikrav på importerade bibliografiska poster](http://www.kb.se/katalogisering/Katalogisering/Minimikrav-pa-importerade-bibliografiska-poster/) i Katalogisatörens verktygslåda. 
