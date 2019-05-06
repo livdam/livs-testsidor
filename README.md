@@ -28,12 +28,12 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ----------- |  ----------- | ----------- | 
 |  [Generell hjälptext för Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) | [Generell hjälptext för Instans](https://libris.kb.se/katalogisering/help/workflow-instance) | [Generell hjälptext för Verk](https://libris.kb.se/katalogisering/help/workflow-work) |
-| [Beskrivningsnivå](#beskrivningsniva) | [Titel](#titel) | [Språk](#sprak) |
+| [Beskrivningsnivå](#beskrivningsniva) | [Titel](#titel) | [Föredragen titel](#foredragen-titel) |
 | [Skapad av](#skapad-av) | [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Utgivning](#utgivning) | [Föredragen titel](#foredragen-titel) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Forväntad utgivningstid](#forvantad-utgivningstid) |  [Svenska amnesord och genre](#svenska-amnesord-och-genre) |
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Klassifikation](#klassifikation) | 
-| [Katalogiserande instans](#katalogiserande-instans) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  |
+| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Utgivning](#utgivning) | [Språk](#sprak) |
+| [Katalogiseringsregler](#katalogiseringsregler) | [Forväntad utgivningstid](#forvantad-utgivningstid) |  [Genre](#genre) |
+| [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Amne](#amne) | 
+| [Katalogiserande instans](#katalogiserande-instans) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) | [Klassifikation](#klassifikation) |
 | [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | |
 | [Entry map](#entry-map) | [Seriemedlemskap](#seriemedlemskap) | | 
 | [Systemnummer](#systemnummer) | | | 
@@ -176,7 +176,7 @@ OBS! Måste ses över! Anvisningarna nedan är upprättade med tanke på matchni
 Vid import från Andra källor kan posterna ibland innehålla flera olika ISBN, både för tryckt och elektronisk utgåva. För att inte skapa problem i Libris importflöden är det viktigt att tänka på följande: 
 - Endast ISBN för den beskrivna utgåvan ska ligga i Identifikator/ISBN/Värde (020 #a). Låt endast värden för två utgåvor ligga kvar om det ena syftar på inbunden och det andra på häftad utgåva. 
 -	För en tryckt bok får det inte finnas ISBN för en annan tryckt version i Indirekt identifierad av/ISBN/Värde (020 #z), utan enbart i Identifierad av/ISBN/Värde (020 #a). Flytta ISBN för tryckta versioner till Identifierad av och låt ISBN för elektroniska versioner ligga kvar under Indirekt identifierad av. 
-- För elektroniska resurser gäller samma sak, fast tvärtom: Det får inte ligga ISBN för en annan elektronisk version under Indirekt identifierad av, utan där får endast ISBN för olika tryckta versioner ligga. 
+- För elektroniska resurser gäller samma sak, fast tvärtom. Det får inte ligga ISBN för en annan elektronisk version under Indirekt identifierad av, utan där får endast ISBN för olika tryckta versioner ligga. 
 - Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både Identifikator/ISBN/Värde (020 #a) och Indirekt identifierad av/ISBN/Värde (020 #z). Ta bort ISBN från Indirekt identifierad av och låt det ligga kvar under Identifikator/ISBN/Värde. 
 - Om det ligger ISBN till andra utgåvor i Indirekt identifierad av/ISBN/Värde (020 #z), kan det särskiljande tillägget (020 #q) ibland hamna fel, under Identifikator/Nothing/Särskiljande tillägg. Lägg till det särskiljande tillägget under Indirekt identifierad av/ISBN, kopplat till det värde det gäller, och radera Nothing/Särskiljande tillägg under Identifikator. 
 
@@ -196,8 +196,17 @@ OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på 
 ## Instans av verk  
 Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
 
+### Foredragen titel
+**Föredragen titel**  
+Kontrollera att titelformen för föredragen titel stämmer med svensk praxis.
+
+### Medverkan och funktion 
+Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
+- Validera alltid namnformer och, vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf)  
+- Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
+ 
 ### Sprak
-**Språk** 
+**Språk **
 
 Språk (language = 008/35-37 och 040 #a) 
 
@@ -208,61 +217,29 @@ OBS! Om egenskapen Språk saknas och läggs till via funktionen Berika från mal
 
 Originalversion/Verk/Språk (originalversion/Work/language = 041 #h) 
 
-Kontrollera att beskrivningen är korrekt. 
+Kontrollera att beskrivningen är korrekt.  
 
 ### Genre 
-**Termer som motsvarar marc-koder i 008** 
+#### Termer som motsvarar marc-koder i 008 
 
 Kontrollera att de länkade entiteterna är korrekta (Litterär genre, Festskrift m.m.) 
 
-**Genre/formtermer enligt Svenska ämnesord** 
+#### Genre/formtermer enligt Svenska ämnesord 
 
 Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
 
-### Medverkan och funktion 
-Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
-- Validera alltid namnformer och, vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf)  
-- Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
- 
-### Foredragen titel
-**Föredragen titel**  
-Kontrollera att titelformen för föredragen titel stämmer med svensk praxis. 
-
-### Svenska amnesord och genre
-**Svenska ämnesord och Genre/formtermer**  
-Lägg till Svenska ämnesord och Genre/formtermer enligt
-[Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/katalogisering/Svenska-amnesord/riktlinjer/) 
-
-### Klassifikation 
-Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
-
-#### DDK-klassifikation 
-Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Efter kontroll ändra Parallell upplagebeteckning/Upplagespecifik upphovsuppgift till ”23/swe”. 
-
-OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. Om den saknas måste en ny DDK-kod läggas till: 
-- Klicka på plustecknet Lägg till entitet vid Klassifikation 
-- Välj Skapa lokal entitet och välj DDK-klassifikation 
-- Fyll i uppgifterna och radera den ofullständiga DDK-klassifikationen 
-
-#### SAB-klassifikation 
-För att lägga till klassifikationskod: 
-- Klicka på Lägg till entitet (plustecknet vid Klassifikation) 
-- Välj Skapa lokal entitet och välj Klassifikation 
-- Fyll i uppgifterna 
-
-### Genre 
-**Termer som motsvarar marc-koder i 008** 
-Kontrollera att de länkade entiteterna är korrekta (Litterär genre, Festskrift m.m.) 
-**Genre/formtermer enligt Svenska ämnesord** 
-Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
 ### Amne 
 Läs mer om [Ämnesord i Libris](https://libris.kb.se/katalogisering/help/workflow-general-sh) 
+
 #### Svenska ämnesord 
 Komplettera med tillämpliga ämnesord enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]). 
+
 #### Agenter som ämnesord
 Validera namnformer. 
+
 ### Klassifikation 
 Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
+
 #### DDK-klassifikation 
 Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Efter kontroll ändra Parallell upplagebeteckning/Upplagespecifik upphovsuppgift till ”23/swe”. 
 
@@ -270,6 +247,7 @@ OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. 
 - Klicka på plustecknet Lägg till entitet vid Klassifikation 
 - Välj Skapa lokal entitet och välj DDK-klassifikation 
 - Fyll i uppgifterna och radera den ofullständiga DDK-klassifikationen 
+
 #### SAB-klassifikation 
 För att lägga till klassifikationskod: 
 - Klicka på Lägg till entitet (plustecknet vid Klassifikation) 
