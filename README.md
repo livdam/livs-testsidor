@@ -233,7 +233,7 @@ Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för inde
 **Ämnesord** 
 Läs mer om [Ämnesord i Libris](https://libris.kb.se/katalogisering/help/workflow-general-sh) 
 
-**- Svenska ämnesord** 
+#### - Svenska ämnesord 
 Komplettera med tillämpliga ämnesord enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]). 
 
 #### - Agenter som ämne
