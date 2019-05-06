@@ -32,7 +32,7 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Skapad av](#skapad-av) | [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
 | [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Utgivning](#utgivning) | [Språk](#sprak) |
 | [Katalogiseringsregler](#katalogiseringsregler) | [Forväntad utgivningstid](#forvantad-utgivningstid) |  [Genre](#genre) |
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Amne](#amne) | 
+| [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Ämne](#amne) | 
 | [Katalogiserande instans](#katalogiserande-instans) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) | [Klassifikation](#klassifikation) |
 | [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | |
 | [Entry map](#entry-map) | [Seriemedlemskap](#seriemedlemskap) | | 
