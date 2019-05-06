@@ -28,13 +28,13 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ----------- |  ----------- | ----------- | 
 |  [Generell hjälptext för Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) | [Generell hjälptext för Instans](https://libris.kb.se/katalogisering/help/workflow-instance) | [Generell hjälptext för Verk](https://libris.kb.se/katalogisering/help/workflow-work) |
-| [Identifikator](identifikator) | [Utgivningssätt](utgivningssatt) | [Föredragen titel](#foredragen-titel) |
-| [Beskrivningsnivå](#beskrivningsniva)| [Medietyp och bärartyp](medietyp-och-barartyp) | [Medverkan och funktion](#medverkan-och-funktion) |
+| [Identifikator](#identifikator) | [Utgivningssätt](#utgivningssatt) | [Föredragen titel](#foredragen-titel) |
+| [Beskrivningsnivå](#beskrivningsniva)| [Medietyp och bärartyp](#medietyp-och-barartyp) | [Medverkan och funktion](#medverkan-och-funktion) |
 | [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Titel](#titel) | [Språk](#sprak) |
 | [Skapad av](#skapad-av) | [Upphovsuppgift](#upphovsuppgift) | [Genre](#genre) |
 | [Entry map](#entry-map) | [Utgivning](#utgivning) | [Ämne](#amne) |
 | [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Klassifikation](#klassifikation) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Innehållstyp](innehallstyp) | 
+| [Katalogiseringsregler](#katalogiseringsregler) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Innehållstyp](#innehallstyp) | 
 | [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) |  |
 | [Katalogiserande instans](#katalogiserande-instans) | [Seriemedlemskap](#seriemedlemskap) |  |
 | [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  | 
