@@ -30,12 +30,12 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 |  [Generell hjälptext för Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) | [Generell hjälptext för Instans](https://libris.kb.se/katalogisering/help/workflow-instance) | [Generell hjälptext för Verk](https://libris.kb.se/katalogisering/help/workflow-work) |
 | [Identifikator](identifikator) | [Titel](#titel) | [Föredragen titel](#foredragen-titel) |
 | [Beskrivningsnivå](#beskrivningsniva)| [Upphovsuppgift](#upphovsuppgift) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Utgivning](#utgivning) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Skapad av](#skapad-av) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Språk](#sprak) |
-| [Entry map](#entry-map) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Genre](#genre) |
-| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Ämne](#amne) |
+| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Utgivning](#utgivning) | [Språk](#sprak) |
+| [Skapad av](#skapad-av) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Genre](#genre) |
+| [Entry map](#entry-map) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Ämne](#amne) |
+| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Omfång, övriga fysiska detaljer, mått](#omfang) | [Klassifikation](#klassifikation) |
 | [Katalogiseringsregler](#katalogiseringsregler) | [Seriemedlemskap](#seriemedlemskap) |  | 
-| [Katalogiseringsspråk](#katalogiseringssprak) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) | [Klassifikation](#klassifikation) |
+| [Katalogiseringsspråk](#katalogiseringssprak) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  |
 | [Katalogiserande instans](#katalogiserande-instans) |  |  |
 | [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) |  |  | 
 
