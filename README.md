@@ -148,15 +148,15 @@ Vid postimport saknas ibland upphovsuppgiften. Om egenskapen saknas:
 ### Utgivning 
 Utgivning (publication = 008/07-10, 008/15-17, 260, 264 -/1) 
 
-Vid postimport medföljer ibland två avsnitt: Primär utgivning med År och Land, och Utgivning med Plats, Agent och Datum. Vid redigering: 
-- Flytta, om det bedöms nödvändigt, uppgifterna om Plats, Agent och Datum till Primär utgivning och ta bort Utgivning.  
+- Vid postimport medföljer ibland två avsnitt: Primär utgivning med År och Land, och Utgivning med Plats, Agent och Datum. Vid redigering: 
+  - Flytta, om det bedöms nödvändigt, uppgifterna om Plats, Agent och Datum till Primär utgivning och ta bort Utgivning.  
 
-I andra fall finns endast avsnittet Utgivning med. Vid redigering: 
-- Klicka på plustecknet Lägg till entitet vid Utgivning 
-- Välj typ Primär utgivning 
-- Fyll i uppgifterna i Primär utgivning och ta sedan bort Utgivning  
+- I andra fall finns endast avsnittet Utgivning med. Vid redigering: 
+  - Klicka på plustecknet Lägg till entitet vid Utgivning 
+  - Välj typ Primär utgivning 
+  - Fyll i uppgifterna i Primär utgivning och ta sedan bort Utgivning  
 
-Vid postimport förekommer ibland både År och Copyrightår inom Primär utgivning (= 008/06: t, 008/07-10: År och 008/11-14: Copyrightår). Låt uppgiften ligga kvar oförändrad. Ej att förväxla med egenskapen Copyright/Copyright/Datum (= 264 -/4 #c). 
+- Vid postimport förekommer ibland både År och Copyrightår inom Primär utgivning (= 008/06: t, 008/07-10, 008/11-14). Låt uppgiften ligga kvar oförändrad. Ej att förväxla med egenskapen Copyright/Copyright/Datum (= 264 -/4 #c). 
 
 OBS! Om egenskapen Utgivning/Primär utgivning saknas och läggs till via funktionen Berika från mall, länkas utgivningslandet automatiskt till Sverige. Ändra vid behov. 
 
@@ -172,7 +172,7 @@ Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 #z
 
 OBS! Kommer att ses över. Anvisningarna nedan är upprättade med tanke på matchningsproblematik vid automatiska flöden. 
 
-Vid import från Andra källor kan posterna ibland innehålla flera olika ISBN, både för tryckt och elektronisk utgåva. För att inte skapa problem i Libris importflöden är det viktigt att tänka på följande: 
+Vid import från Andra källor innehåller posterna ofta flera olika ISBN, både för tryckt och elektronisk utgåva. För att inte skapa problem i Libris importflöden är det viktigt att tänka på följande: 
 -	För en tryckt bok får det inte finnas ISBN för en annan tryckt version i _Indirekt identifierad av_, utan enbart i _Identifikator_ . Flytta ISBN för tryckta versioner till _Identifikator_ och låt ISBN för elektroniska versioner ligga kvar under _Indirekt identifierad av_. 
 - För elektroniska resurser gäller samma sak, fast tvärtom. Det får inte ligga ISBN för en annan elektronisk version under _Indirekt identifierad av_, utan där får endast ISBN för olika tryckta versioner ligga. 
 - Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både _Identifikator_ och _Indirekt identifierad av_. Ta bort ISBN från _Indirekt identifierad av_ och låt det ligga kvar under _Identifikator_. 
