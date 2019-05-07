@@ -176,7 +176,7 @@ Vid import från Andra källor kan posterna ibland innehålla flera olika ISBN, 
 -	För en tryckt bok får det inte finnas ISBN för en annan tryckt version i _Indirekt identifierad av_, utan enbart i _Identifikator_ . Flytta ISBN för tryckta versioner till _Identifikator_ och låt ISBN för elektroniska versioner ligga kvar under _Indirekt identifierad av_. 
 - För elektroniska resurser gäller samma sak, fast tvärtom. Det får inte ligga ISBN för en annan elektronisk version under _Indirekt identifierad av_, utan där får endast ISBN för olika tryckta versioner ligga. 
 - Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både _Identifikator_ och _Indirekt identifierad av_. Ta bort ISBN från _Indirekt identifierad av_ och låt det ligga kvar under _Identifikator_. 
-- Om det ligger ISBN till andra utgåvor i _Indirekt identifierad av_, kan det särskiljande tillägget (020 #q) ibland hamna fel, under Identifikator/Nothing/Särskiljande tillägg. Lägg till det särskiljande tillägget under Indirekt identifierad av/ISBN, kopplat till det värde det gäller, och radera Nothing/Särskiljande tillägg under Identifikator. 
+- Om det ligger ISBN till andra utgåvor i _Indirekt identifierad av_, kan det särskiljande tillägget (020 #q) ibland hamna fel, under _Identifikator/Nothing/Särskiljande tillägg_. Lägg till det särskiljande tillägget under _Indirekt identifierad av/ISBN_, kopplat till det värde det gäller, och radera _Nothing/Särskiljande tillägg_ under _Identifikator_. 
 
 OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast de som hör till resursen som ska katalogiseras vara kvar. 
 
