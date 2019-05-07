@@ -236,7 +236,7 @@ Originalversion/Verk/Språk (originalversion/Work/language = 041 #h)
 - Kontrollera att beskrivningen är korrekt.  
 
 ### Genre 
-#### Termer som motsvarar marc-koder i 008 
+#### Termer som motsvarar MARC21-koder i 008 
 
 - Kontrollera att de länkade entiteterna är korrekta (Litterär genre, Festskrift m.m.) 
 
