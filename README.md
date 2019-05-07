@@ -221,7 +221,7 @@ Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/
 - Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
  
 ### Sprak
-#### - Språk
+#### Språk
 
 Språk (language = 008/35-37 och 040 #a) 
 
@@ -229,29 +229,28 @@ Språk (language = 008/35-37 och 040 #a)
 
 OBS! Om egenskapen Språk saknas och läggs till via funktionen Berika från mall, länkas den automatiskt till svenska. Ändra vid behov. 
 
-#### - Originalversion 
+#### Originalversion 
 
 Originalversion/Verk/Språk (originalversion/Work/language = 041 #h) 
 
 - Kontrollera att beskrivningen är korrekt.  
 
 ### Genre 
-#### - Termer som motsvarar marc-koder i 008 
+#### Termer som motsvarar marc-koder i 008 
 
 - Kontrollera att de länkade entiteterna är korrekta (Litterär genre, Festskrift m.m.) 
 
-#### - Genre/formtermer enligt Svenska ämnesord 
+#### Genre/formtermer enligt Svenska ämnesord 
 
 - Komplettera med tillämpliga termer för genre/form enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]) 
 
 ### Amne 
-**Ämnesord** 
 Läs mer om [Ämnesord i Libris](https://libris.kb.se/katalogisering/help/workflow-general-sh) 
 
-#### - Svenska ämnesord 
+#### Svenska ämnesord 
 - Komplettera med tillämpliga ämnesord enligt [Riktlinjer för indexering med Svenska ämnesord](http://www.kb.se/dokument/Verktygsladan/Svenska%20%C3%A4mnesord/Riktlinjer/Riktlinjer%20SAO.pdf]). 
 
-#### - Agenter som ämne
+#### Agenter som ämne
 Läs mer om agenter som ämne i hjälptexten [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
 
 - Validera namnformer. 
@@ -259,7 +258,7 @@ Läs mer om agenter som ämne i hjälptexten [Relationer till Agent](https://lib
 ### Klassifikation 
 Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
 
-#### - DDK-klassifikation 
+#### DDK-klassifikation 
 - Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Efter kontroll ändra Parallell upplagebeteckning/Upplagespecifik upphovsuppgift till ”23/swe”. 
 
 OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. 
@@ -268,7 +267,7 @@ OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt.
   - Välj Skapa lokal entitet och välj DDK-klassifikation 
   - Fyll i uppgifterna och radera den ofullständiga DDK-klassifikationen 
 
-#### - SAB-klassifikation 
+#### SAB-klassifikation 
 - Lägg till klassifikationskod.
 
 ### Innehallstyp 
