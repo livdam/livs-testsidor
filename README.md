@@ -177,7 +177,7 @@ Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 #z
 OBS! Kommer att ses över. Anvisningarna nedan är upprättade med tanke på matchningsproblematik vid automatiska flöden. 
 
 Vid import från Andra källor innehåller posterna ofta flera olika ISBN, både för tryckt och elektronisk utgåva. För att inte skapa problem i Libris importflöden är det viktigt att tänka på följande: 
--	För en tryckt bok får det inte finnas ISBN för en annan tryckt version i _Indirekt identifierad av_, utan enbart i _Identifikator_. Flytta ISBN för tryckta versioner till _Identifikator_ och låt ISBN för elektroniska versioner ligga kvar under _Indirekt identifierad av_. 
+-	För en tryckt version får det inte finnas ISBN för en annan tryckt version i _Indirekt identifierad av_, utan enbart i _Identifikator_. Flytta ISBN för tryckta versioner till _Identifikator_ och låt ISBN för elektroniska versioner ligga kvar under _Indirekt identifierad av_. 
 - För elektroniska resurser gäller samma sak, fast tvärtom. Det får inte ligga ISBN för en annan elektronisk version under _Indirekt identifierad av_, utan där får endast ISBN för olika tryckta versioner ligga. 
 - Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både _Identifikator_ och _Indirekt identifierad av_. Ta bort ISBN från _Indirekt identifierad av_ och låt det ligga kvar under _Identifikator_. 
 - Om det ligger ISBN till andra utgåvor i _Indirekt identifierad av_, kan det särskiljande tillägget (020 #q) ibland hamna fel, under _Identifikator/Nothing/Särskiljande tillägg_. Lägg till det särskiljande tillägget under _Indirekt identifierad av/ISBN_, kopplat till det värde det gäller, och radera _Nothing/Särskiljande tillägg_ under _Identifikator_. 
