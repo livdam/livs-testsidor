@@ -157,9 +157,9 @@ Utgivning (publication = 008/07-10, 008/15-17, 260, 264 -/1)
 - I andra fall finns endast avsnittet Utgivning med. Vid redigering: 
   - Klicka på plustecknet Lägg till entitet vid Utgivning 
   - Välj typ Primär utgivning 
-  - Fyll i uppgifterna i Primär utgivning och ta sedan bort Utgivning  
+  - Fyll i uppgifterna i Primär utgivning och, om det bedöms nödvändigt, ta bort Utgivning  
 
-- Vid postimport förekommer ibland både År och Copyrightår inom Primär utgivning (= 008/06: t, 008/07-10, 008/11-14). Låt uppgiften ligga kvar oförändrad. Ej att förväxla med egenskapen Copyright/Copyright/Datum (= 264 -/4 #c). 
+- Vid postimport förekommer ibland både År och Copyrightår inom Primär utgivning (= 008/06: t, 008/07-10, 008/11-14). Uppgiften läggs inte till vid primärkatalogisering men kan ligga kvar om den är korrekt. Vid RDA-katalogisering jämför med egenskapen Copyright/Copyright/Datum (= 264 -/4 #c). 
 
 OBS! Om egenskapen Utgivning/Primär utgivning saknas och läggs till via funktionen Berika från mall, länkas utgivningslandet automatiskt till Sverige. Ändra vid behov. 
 
