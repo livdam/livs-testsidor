@@ -76,7 +76,7 @@ Kan förekomma i vissa importerade poster.
 ### Uppgraderad eller importerad av 
 Uppgraderad eller importerad av/Bibliotek/Sigel (descriptionUpgrader/Library/sigel = 040 #d) 
 
-- Lägg alltid till uppgiften vid postimport. För att lägga till egenskapen: 
+- Lägg alltid till uppgiften vid postimport. Om egenskapen saknas: 
   - Klicka på plustecknet Lägg till egenskaper under: Post och välj Uppgraderad eller importerad av 
   - Klicka på plustecknet Lägg till entitet och välj Skapa lokal entitet 
   - Välj Bibliotek och skriv in uppgiften under Sigel 
