@@ -182,7 +182,7 @@ Vid import från Andra källor innehåller posterna ofta flera olika ISBN, både
 - Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både _Identifikator_ och _Indirekt identifierad av_. Ta bort ISBN från _Indirekt identifierad av_ och låt det ligga kvar under _Identifikator_. 
 - Om det ligger ISBN till andra utgåvor i _Indirekt identifierad av_, kan det särskiljande tillägget (020 #q) ibland hamna fel, under _Identifikator/Nothing/Särskiljande tillägg_. Lägg till det särskiljande tillägget under _Indirekt identifierad av/ISBN_, kopplat till det värde det gäller, och radera _Nothing/Särskiljande tillägg_ under _Identifikator_. 
 
-OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast de som hör till resursen som ska katalogiseras vara kvar. 
+OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast det som hör till resursen som ska katalogiseras vara kvar. 
 
 ### Omfang
 **Omfång, övriga fysiska detaljer, mått**  
