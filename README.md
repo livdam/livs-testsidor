@@ -17,7 +17,7 @@ Poster som importeras till Libris från andra källor ska kontrolleras och vid b
 
 Ytterligare anvisningar hittas även i Katalogisatörens verktygslåda under de enskilda MARC21-fälten inom [Katalogisering](http://www.kb.se/katalogisering/Katalogisering/) och [Bibliografiska formatet](http://www.kb.se/katalogisering/Formathandboken/Bibliografiska-formatet/).  
 
-Eftersom anvisningarna inte är anpassade till det nya katalogiseringsverktyget eller det nya formatet kan denna checklista användas vid redigering.  
+Eftersom anvisningarna inte är anpassade till det nya katalogiseringsverktyget eller det nya formatet kan denna checklista användas som stöd vid redigering.  
 
 OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna med den engelska benämningen. De får automatiskt den svenska benämningen efter att posten sparats. 
 
