@@ -51,8 +51,10 @@ Beskrivningsnivå (encodingLevel = 000/17)
 
 Vid postimport händer det att egenskapen saknar värde eller saknas helt. 
 - Om egenskapen finns men saknar värde: 
+
   - Välj värde från listan 
 - Om egenskapen saknas: 
+
   - Klicka på plustecknet Lägg till egenskaper under: Post 
   - Välj typ Beskrivningsnivå och välj värde från lista  
 
