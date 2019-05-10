@@ -136,11 +136,10 @@ Har titel/… (hasTitle/… = 24X)
 
 - Kontrollera att beskrivningen är korrekt. 
 
-OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. 
-- För att kontrollera om det är korrekt ställ markören på Övrig titelinformation och om titleRemainder blir synligt istället för subtitle, ändra uppgiften: 
-  - Klicka på Lägg till egenskaper under: Titel 
-  - Välj Övrig titelinformation/subtitle och skriv in undertiteln 
-  - Radera Övrig titelinformation/titleRemainder 
+OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. För att kontrollera om det är korrekt ställ markören på Övrig titelinformation och om _titleRemainder_ blir synligt istället för _subtitle_, ändra uppgiften: 
+  -- Klicka på Lägg till egenskaper under: Titel 
+  -- Välj Övrig titelinformation/subtitle och skriv in undertiteln 
+  -- Radera Övrig titelinformation/titleRemainder 
 
 ### Upphovsuppgift 
 Upphovsuppgift (responsibilityStatement = 245 #c) 
