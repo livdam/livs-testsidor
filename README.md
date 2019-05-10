@@ -258,7 +258,7 @@ Läs mer om agenter som ämne i hjälptexten [Relationer till Agent](https://lib
 Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
 
 #### DDK-klassifikation 
-- Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Efter kontroll ändra Parallell upplagebeteckning/Upplagespecifik upphovsuppgift till ”23/swe”. 
+- Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Om kod läggs till eller ändras bör Parallell upplagebeteckning/Upplagespecifik upphovsuppgift vara ”23/swe”. 
 
   OBS! Egenskapen _Parallell upplagebeteckning_ går inte att lägga till manuellt. Om den saknas måste en en ny DDK-kod läggas till: 
   - Klicka på plustecknet Lägg till entitet vid Klassifikation 
