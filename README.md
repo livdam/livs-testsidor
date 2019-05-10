@@ -51,10 +51,9 @@ Beskrivningsnivå (encodingLevel = 000/17)
 
 Vid postimport händer det att egenskapen saknar värde eller saknas helt. 
 - Om egenskapen finns men saknar värde: 
-
   - Välj värde från listan 
+  
 - Om egenskapen saknas: 
-
   - Klicka på plustecknet Lägg till egenskaper under: Post 
   - Välj typ Beskrivningsnivå och välj värde från lista  
 
@@ -82,6 +81,7 @@ Uppgraderad eller importerad av/Bibliotek/Sigel (descriptionUpgrader/Library/sig
   - Klicka på plustecknet Lägg till egenskaper under: Post och välj Uppgraderad eller importerad av 
   - Klicka på plustecknet Lägg till entitet och välj Skapa lokal entitet 
   - Välj Bibliotek och skriv in uppgiften under Sigel 
+  
 - Lägg även till sigel om ett annat bibliotek har importerat posten men du uppgraderar beskrivningsnivån. 
 
 OBS! Egenskapen kan inte läggas till via funktionen Berika från mall.  
@@ -106,7 +106,6 @@ OBS! Om egenskapen läggs till med funktionen Berika från mall blir katalogiser
 Katalogiserande instans (marc:catalogingSource = 008/39) 
 
 - Ändra inte postens ursprungliga kod. Saknas egenskapen:  
-
   - Klicka på plustecknet Lägg till egenskaper under: Post 
   - Välj Katalogiserande instans 
   - Klicka på plustecknet Lägg till entitet, sök fram och välj Annan verksamhet.
@@ -139,7 +138,6 @@ Har titel/… (hasTitle/… = 24X)
 
 OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. 
 - För att kontrollera om det är korrekt ställ markören på Övrig titelinformation och om titleRemainder blir synligt istället för subtitle, ändra uppgiften: 
-
   - Klicka på Lägg till egenskaper under: Titel 
   - Välj Övrig titelinformation/subtitle och skriv in undertiteln 
   - Radera Övrig titelinformation/titleRemainder 
@@ -149,7 +147,6 @@ Upphovsuppgift (responsibilityStatement = 245 #c)
 
 Vid postimport saknas ibland upphovsuppgiften. 
 - Om egenskapen saknas: 
-
   - Klicka på Lägg till egenskaper under: Instans 
   - Välj Upphovsuppgift och fyll i uppgiften 
 
@@ -160,7 +157,6 @@ Utgivning (publication = 008/07-10, 008/15-17, 260, 264 -/1)
   - Flytta, om det bedöms nödvändigt, uppgifterna om Plats, Agent och Datum till Primär utgivning och ta bort Utgivning.  
 
 - I andra fall finns endast avsnittet Utgivning med. Vid redigering: 
-
   - Klicka på plustecknet Lägg till entitet vid Utgivning 
   - Välj typ Primär utgivning 
   - Fyll i uppgifterna i Primär utgivning och, om det bedöms nödvändigt, ta bort Utgivning  
@@ -198,23 +194,24 @@ OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det 
 Seriemedlemskap/Serieuppgift (seriesMembership/seriesStatement = 490 #a)
 
 Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (seriesMembership/inSeries/InstanceofWork/Work/hasTitle/Title/mainTitle = 830 #a) 
-- Om motsvarande fält 490 #a och 830 #a matchar, läggs de vid import i samma Seriemedlemskap. 
-- Om de inte matchar, skapas två Seriemedlemskap: ett med enbart Seriemedlemskap/Serieuppgift (490 #a) och ett med enbart Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (830 #a). 
 
-När man redigerar importerade poster med två Seriemedlemskap kan man, om man bedömer det nödvändigt, slå ihop dem till ett. 
+- Ibland skapas det vid import två Seriemedlemskap, ett med _Serieuppgift_ och ett med _Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel_. Vid redigering kan man, om man bedömer det nödvändigt, slå ihop dem till ett. 
 
-OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på olika sätt i 490 och 830, dubbleras dessa inom Seriemedlemskapet. Radera en av de dubblerade ISSN- och/eller voIymbeteckningarna.  
+- Om ISSN är angivet i både 490 och 830 och/eller om volymbeteckningen är angiven på olika sätt i 490 och 830 i ursprungsposten, dubbleras dessa inom Seriemedlemskapet. Radera en av de dubblerade ISSN- och/eller voIymbeteckningarna.  
 
 ### Andra databaser
 **Egenskaper som länkar till andra databaser och instanser som inte finns i Libris**  
 - Låt uppgifterna stå:  
 
-  - Tillhörande media/Mediaobjekt (associatedMedia/Mediaobject = 856 4/0) 
-  - Annan relaterad resurs/Elektronisk (marc:versionOfResource/Electronic = 856 4/1) 
-  - Relaterad beskrivning eller innehåll/Dokument (isPrimaryTopicOf/Document = 856 4/2)  
+  Tillhörande media/Mediaobjekt (associatedMedia/Mediaobject = 856 4/0) 
+  
+  Annan relaterad resurs/Elektronisk (marc:versionOfResource/Electronic = 856 4/1) 
+  
+  Relaterad beskrivning eller innehåll/Dokument (isPrimaryTopicOf/Document = 856 4/2)  
+  
 - Radera uppgifterna: 
 
-  - Beskriven av/Post/Kontrollnummer (= #w).Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
+  Beskriven av/Post/Kontrollnummer (= #w).Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
 
 ## Instans av verk  
 Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
@@ -270,8 +267,8 @@ Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katal
 - Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Efter kontroll ändra Parallell upplagebeteckning/Upplagespecifik upphovsuppgift till ”23/swe”. 
 
 OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. 
-- Om Parallell upplagebeteckning/Upplagespecifik upphovsuppgift saknas måste en en ny DDK-kod läggas till: 
 
+Om Parallell upplagebeteckning/Upplagespecifik upphovsuppgift saknas måste en en ny DDK-kod läggas till: 
   - Klicka på plustecknet Lägg till entitet vid Klassifikation 
   - Välj Skapa lokal entitet och välj DDK-klassifikation 
   - Fyll i uppgifterna och radera den ofullständiga DDK-klassifikationen 
