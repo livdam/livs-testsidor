@@ -180,7 +180,7 @@ Vid import från Andra källor innehåller posterna ofta flera olika ISBN, både
 -	För en tryckt version får det inte finnas ISBN för en annan tryckt version i _Indirekt identifierad av_, utan enbart i _Identifikator_. Flytta ISBN för tryckta versioner till _Identifikator_ och låt ISBN för elektroniska versioner ligga kvar under _Indirekt identifierad av_. 
 - För elektroniska resurser gäller samma sak, fast tvärtom. Det får inte ligga ISBN för en annan elektronisk version under _Indirekt identifierad av_, utan där får endast ISBN för olika tryckta versioner ligga. 
 - Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både _Identifikator_ och _Indirekt identifierad av_. Ta bort ISBN från _Indirekt identifierad av_ och låt det ligga kvar under _Identifikator_. 
-- Om det ligger ISBN till andra utgåvor i _Indirekt identifierad av_, kan det särskiljande tillägget (020 #q) ibland hamna fel, under _Identifikator/Nothing/Särskiljande tillägg_. Lägg till det särskiljande tillägget under _Indirekt identifierad av/ISBN_, kopplat till det värde det gäller, och radera _Nothing/Särskiljande tillägg_ under _Identifikator_. 
+- Om det ligger ISBN till andra utgåvor i _Indirekt identifierad av_, kan det särskiljande tillägget (020 #q) ibland hamna fel, under Identifikator/Nothing/Särskiljande tillägg. Lägg till det särskiljande tillägget under _Indirekt identifierad av_, kopplat till det värde det gäller, och radera _Nothing_ under _Identifikator_. 
 
 OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast det som hör till resursen som ska katalogiseras vara kvar. 
 
@@ -193,9 +193,9 @@ Seriemedlemskap/Serieuppgift (seriesMembership/seriesStatement = 490 #a)
 
 Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (seriesMembership/inSeries/InstanceofWork/Work/hasTitle/Title/mainTitle = 830 #a) 
 
-- Ibland skapas det vid import två Seriemedlemskap, ett med _Serieuppgift_ och ett med _Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel_. Vid redigering kan man, om man bedömer det nödvändigt, slå ihop dem till ett. 
+- Ibland skapas det vid import två Seriemedlemskap, ett med _Serieuppgift_ och ett med _Ingår i serie_. Vid redigering kan man, om man bedömer det nödvändigt, slå ihop dem till ett. 
 
-- Om ISSN är angivet i både 490 och 830 och/eller om volymbeteckningen är angiven på olika sätt i 490 och 830 i ursprungsposten, dubbleras dessa inom Seriemedlemskapet. Radera en av de dubblerade ISSN- och/eller voIymbeteckningarna.  
+- Om ISSN är angivet i både 490 och 830 och/eller om volymbeteckningen är angiven på olika sätt i 490 och 830 i ursprungsposten, dubbleras dessa inom Seriemedlemskapet. Radera de dubblerade fälten.  
 
 ### Andra databaser
 **Egenskaper som länkar till andra databaser och instanser som inte finns i Libris**  
