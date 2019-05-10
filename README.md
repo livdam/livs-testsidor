@@ -104,6 +104,7 @@ OBS! Om egenskapen läggs till med funktionen Berika från mall blir katalogiser
 Katalogiserande instans (marc:catalogingSource = 008/39) 
 
 - Ändra inte postens ursprungliga kod. Saknas egenskapen:  
+
   - Klicka på plustecknet Lägg till egenskaper under: Post 
   - Välj Katalogiserande instans 
   - Klicka på plustecknet Lägg till entitet, sök fram och välj Annan verksamhet.
@@ -136,6 +137,7 @@ Har titel/… (hasTitle/… = 24X)
 
 OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. 
 - För att kontrollera om det är korrekt ställ markören på Övrig titelinformation och om titleRemainder blir synligt istället för subtitle, ändra uppgiften: 
+
   - Klicka på Lägg till egenskaper under: Titel 
   - Välj Övrig titelinformation/subtitle och skriv in undertiteln 
   - Radera Övrig titelinformation/titleRemainder 
@@ -145,6 +147,7 @@ Upphovsuppgift (responsibilityStatement = 245 #c)
 
 Vid postimport saknas ibland upphovsuppgiften. 
 - Om egenskapen saknas: 
+
   - Klicka på Lägg till egenskaper under: Instans 
   - Välj Upphovsuppgift och fyll i uppgiften 
 
@@ -155,6 +158,7 @@ Utgivning (publication = 008/07-10, 008/15-17, 260, 264 -/1)
   - Flytta, om det bedöms nödvändigt, uppgifterna om Plats, Agent och Datum till Primär utgivning och ta bort Utgivning.  
 
 - I andra fall finns endast avsnittet Utgivning med. Vid redigering: 
+
   - Klicka på plustecknet Lägg till entitet vid Utgivning 
   - Välj typ Primär utgivning 
   - Fyll i uppgifterna i Primär utgivning och, om det bedöms nödvändigt, ta bort Utgivning  
@@ -202,10 +206,12 @@ OBS! Om ISSN finns i både 490 och 830 och om volymbeteckningen är angiven på 
 ### Andra databaser
 **Egenskaper som länkar till andra databaser och instanser som inte finns i Libris**  
 - Låt uppgifterna stå:  
+
   - Tillhörande media/Mediaobjekt (associatedMedia/Mediaobject = 856 4/0) 
   - Annan relaterad resurs/Elektronisk (marc:versionOfResource/Electronic = 856 4/1) 
   - Relaterad beskrivning eller innehåll/Dokument (isPrimaryTopicOf/Document = 856 4/2)  
 - Radera uppgifterna: 
+
   - Beskriven av/Post/Kontrollnummer (= #w).Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
 
 ## Instans av verk  
@@ -263,6 +269,7 @@ Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katal
 
 OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. 
 - Om Parallell upplagebeteckning/Upplagespecifik upphovsuppgift saknas måste en en ny DDK-kod läggas till: 
+
   - Klicka på plustecknet Lägg till entitet vid Klassifikation 
   - Välj Skapa lokal entitet och välj DDK-klassifikation 
   - Fyll i uppgifterna och radera den ofullständiga DDK-klassifikationen 
