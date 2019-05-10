@@ -105,7 +105,7 @@ OBS! Om egenskapen läggs till med funktionen Berika från mall blir katalogiser
 ### Katalogiserande instans 
 Katalogiserande instans (marc:catalogingSource = 008/39) 
 
-- Ändra inte postens ursprungliga kod. Saknas egenskapen:  
+- Ändra inte postens ursprungliga kod. Saknas egenskapen: 
   - Klicka på plustecknet Lägg till egenskaper under: Post 
   - Välj Katalogiserande instans 
   - Klicka på plustecknet Lägg till entitet, sök fram och välj Annan verksamhet.
