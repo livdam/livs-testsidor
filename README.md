@@ -260,7 +260,7 @@ Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katal
 #### DDK-klassifikation 
 - Lägg till klassifikationskod från DDK eller kontrollera att den befintliga koden är korrekt. Efter kontroll ändra Parallell upplagebeteckning/Upplagespecifik upphovsuppgift till ”23/swe”. 
 
-- OBS! Egenskapen Parallell upplagebeteckning går inte att lägga till manuellt. Om den saknas måste en en ny DDK-kod läggas till: 
+  OBS! Egenskapen _Parallell upplagebeteckning_ går inte att lägga till manuellt. Om den saknas måste en en ny DDK-kod läggas till: 
   - Klicka på plustecknet Lägg till entitet vid Klassifikation 
   - Välj Skapa lokal entitet och välj DDK-klassifikation 
   - Fyll i uppgifterna och radera den ofullständiga DDK-klassifikationen 
