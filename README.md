@@ -44,7 +44,7 @@ Läs mer om egenskaperna under [Adminmetadata](https://libris.kb.se/katalogiseri
 ### Identifikator 
 Identifikator/Lokal identifikator/Värde (identifiedBy/SystemNumber/value = 035 #a) 
 
-- Systemnummer från andra bibliotek eller bibliotekskonsortier kan förekomma. Låt uppgiften stå 
+- Systemnummer från andra bibliotek eller bibliotekskonsortier kan förekomma. Radera egenskaper som enbart innehåller numeriska tecken. Låt annars uppgiften stå.  
 
 ### Beskrivningsniva
 Beskrivningsnivå (encodingLevel = 000/17) 
