@@ -31,8 +31,8 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Medietyp och bärartyp](#medietyp-och-barartyp) | [Språk](#sprak) |
 | [Skapad av](#skapad-av) | [Titel](#titel) | [Genre](#genre) |
 | [Entry map](#entry-map) | [Upphovsuppgift](#upphovsuppgift) | [Ämne](#amne) |
-| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Utgivning](#utgivning) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Klassifikation](#klassifikation) | [Innehållstyp](#innehallstyp) | 
+| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Utgivning](#utgivning) | [Klassifikation](#klassifikation) |
+| [Katalogiseringsregler](#katalogiseringsregler) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Innehållstyp](#innehallstyp) | 
 | [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) |  |
 | [Katalogiserande instans](#katalogiserande-instans) | [Seriemedlemskap](#seriemedlemskap) |  |
 | [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  | 
