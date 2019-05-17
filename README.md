@@ -111,7 +111,7 @@ Katalogiserande instans (marc:catalogingSource = 008/39)
   - Klicka på plustecknet Lägg till entitet, sök fram och välj Annan verksamhet.
 
 ### marcuncompleted och marcfailedfixedfields 
-Data som inte hanteras av systemet visas i MARC21-format som marcuncompleted eller marcfailedfixedfields. 
+Data som inte hanteras av systemet visas i MARC21-format som `_marcuncompleted` eller `_marcfailedfixedfields`. 
 - Kontrollera om det innehåller information som bör vara med i beskrivningen och radera sedan uppgifterna.
 
 ## Instans 
