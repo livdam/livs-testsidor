@@ -26,13 +26,13 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
 | ----------- |  ----------- | ----------- | 
 |  [Generell hjälptext för Adminmetadata](https://libris.kb.se/katalogisering/help/workflow-adminmetadata) | [Generell hjälptext för Instans](https://libris.kb.se/katalogisering/help/workflow-instance) | [Generell hjälptext för Verk](https://libris.kb.se/katalogisering/help/workflow-work) |
-| [Identifikator](#identifikator) | [Utgivningssätt](#utgivningssatt) | [Föredragen titel](#foredragen-titel) |
-| [Beskrivningsnivå](#beskrivningsniva)| [Medietyp och bärartyp](#medietyp-och-barartyp) | [Medverkan och funktion](#medverkan-och-funktion) |
-| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Titel](#titel) | [Språk](#sprak) |
-| [Skapad av](#skapad-av) | [Upphovsuppgift](#upphovsuppgift) | [Genre](#genre) |
-| [Entry map](#entry-map) | [Utgivning](#utgivning) | [Ämne](#amne) |
-| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Klassifikation](#klassifikation) |
-| [Katalogiseringsregler](#katalogiseringsregler) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Innehållstyp](#innehallstyp) | 
+| [Identifikator](#identifikator) | [Identifikator och Indirekt identifierad av](#identifikator-och-indirekt-identifierad-av) | [Föredragen titel](#foredragen-titel) |
+| [Beskrivningsnivå](#beskrivningsniva)| [Utgivningssätt](#utgivningssatt) | [Medverkan och funktion](#medverkan-och-funktion) |
+| [Systemteknisk anmärkning](#systemteknisk-anmarkning) | [Medietyp och bärartyp](#medietyp-och-barartyp) | [Språk](#sprak) |
+| [Skapad av](#skapad-av) | [Titel](#titel) | [Genre](#genre) |
+| [Entry map](#entry-map) | [Upphovsuppgift](#upphovsuppgift) | [Ämne](#amne) |
+| [Uppgraderad  eller importerad av](#uppgraderad-eller-importerad-av) | [Utgivning](#utgivning)(#klassifikation) |
+| [Katalogiseringsregler](#katalogiseringsregler) | [Forväntad utgivningstid](#forvantad-utgivningstid) | [Klassifikation] | [Innehållstyp](#innehallstyp) | 
 | [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) |  |
 | [Katalogiserande instans](#katalogiserande-instans) | [Seriemedlemskap](#seriemedlemskap) |  |
 | [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  | 
@@ -117,6 +117,21 @@ Data som inte hanteras av systemet visas i MARC21-format som marcuncompleted ell
 ## Instans 
 Läs mer om egenskaperna under [Instans](https://libris.kb.se/katalogisering/help/workflow-instance). 
 
+### Identifikator och Indirekt identifierad av 
+Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 #a) 
+
+Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 #z) 
+
+OBS! Kommer att ses över. Anvisningarna nedan är upprättade med tanke på matchningsproblematik vid automatiska flöden. 
+
+Vid import från Andra källor innehåller posterna ofta flera olika ISBN, både för tryckt och elektronisk utgåva. För att inte skapa problem i Libris importflöden är det viktigt att tänka på följande: 
+-	För en tryckt version får det inte finnas ISBN för en annan tryckt version i _Indirekt identifierad av_, utan enbart i _Identifikator_. Flytta ISBN för tryckta versioner till _Identifikator_ och låt ISBN för elektroniska versioner ligga kvar under _Indirekt identifierad av_. 
+- För elektroniska resurser gäller samma sak, fast tvärtom. Det får inte ligga ISBN för en annan elektronisk version under _Indirekt identifierad av_, utan där får endast ISBN för olika tryckta versioner ligga. 
+- Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både _Identifikator_ och _Indirekt identifierad av_. Ta bort ISBN från _Indirekt identifierad av_ och låt det ligga kvar under _Identifikator_. 
+- Om det ligger ISBN till andra utgåvor i _Indirekt identifierad av_, kan det särskiljande tillägget (020 #q) ibland hamna fel, under Identifikator/Nothing/Särskiljande tillägg. Lägg till det särskiljande tillägget under _Indirekt identifierad av_, kopplat till det värde det gäller, och radera _Nothing_ under _Identifikator_. 
+
+OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast det som hör till resursen som ska katalogiseras vara kvar. 
+
 ### Utgivningssatt
 Utgivningssätt (issuanceType) 
 
@@ -127,9 +142,10 @@ Medietyp (mediaType/Mediatype = 337 #b)
 
 Bärartyp (carrierType/CarrierType = 338 #b) 
 
-- Kontrollera att beskrivningen är korrekt. 
+- Kontrollera att beskrivningen är korrekt och länka vid behov: 
 
-OBS! Entiteterna behöver inte länkas. Länk skapas automatiskt då instansen sparas.  
+  - Om beskrivningen innehåller koder och/eller termer på engelska behöver entiteterna inte länkas. Länk skapas automatiskt då instansen sparas. 
+  - Om beskrivningen innehåller termer på annat språk än engelska måste entiteterna länkas.
 
 ### Titel 
 Har titel/… (hasTitle/… = 24X) 
@@ -169,21 +185,6 @@ Förväntad utgivningstid (projectedProvisionDate = 263)
 Kan förekomma i preliminära poster. 
 - Radera egenskapen.  
 
-### Identifikator och Indirekt identifierad av 
-Identifikator/ISBN/Värde (identifiedBy/Isbn/value = 020 #a) 
-
-Indirekt identifierad av/ISBN/Värde (indirectlyIdentifiedBy/Isbn/value = 020 #z) 
-
-OBS! Kommer att ses över. Anvisningarna nedan är upprättade med tanke på matchningsproblematik vid automatiska flöden. 
-
-Vid import från Andra källor innehåller posterna ofta flera olika ISBN, både för tryckt och elektronisk utgåva. För att inte skapa problem i Libris importflöden är det viktigt att tänka på följande: 
--	För en tryckt version får det inte finnas ISBN för en annan tryckt version i _Indirekt identifierad av_, utan enbart i _Identifikator_. Flytta ISBN för tryckta versioner till _Identifikator_ och låt ISBN för elektroniska versioner ligga kvar under _Indirekt identifierad av_. 
-- För elektroniska resurser gäller samma sak, fast tvärtom. Det får inte ligga ISBN för en annan elektronisk version under _Indirekt identifierad av_, utan där får endast ISBN för olika tryckta versioner ligga. 
-- Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både _Identifikator_ och _Indirekt identifierad av_. Ta bort ISBN från _Indirekt identifierad av_ och låt det ligga kvar under _Identifikator_. 
-- Om det ligger ISBN till andra utgåvor i _Indirekt identifierad av_, kan det särskiljande tillägget (020 #q) ibland hamna fel, under Identifikator/Nothing/Särskiljande tillägg. Lägg till det särskiljande tillägget under _Indirekt identifierad av_, kopplat till det värde det gäller, och radera _Nothing_ under _Identifikator_. 
-
-OBS! Om det är svårt att belägga de ISBN som ligger i en katalogpost är det bättre att radera dem. Låt endast det som hör till resursen som ska katalogiseras vara kvar. 
-
 ### Omfang
 **Omfång, övriga fysiska detaljer, mått**  
 - Kontrollera att beskrivningen är korrekt. 
@@ -217,7 +218,9 @@ Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/w
 ### Medverkan och funktion 
 Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
 - Validera alltid namnformer och, vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf).  
-- Lägg till funktionskoder (#4) för medverkande agenter om de inte finns eller om endast funktionstermer (#e) finns. Funktionstermerna kan ligga kvar oförändrade. 
+- Länka till korrekt funktion. Om egenskapen saknas: 
+  - Klicka på plustecknet Lägg till egenskaper under: Primär medverkan (eller Medverkan) 
+  - Välj Funktion och länka 
  
 ### Sprak
 #### Språk
@@ -271,6 +274,7 @@ Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katal
 ### Innehallstyp 
 Innehållstyp/Innehållstyp (contentType/ContentType = 336 #b) 
 
-- Kontrollera att beskrivningen är korrekt. 
+- Kontrollera att beskrivningen är korrekt och länka vid behov: 
 
-OBS! Entiteterna behöver inte länkas. Länk skapas automatiskt då instansen sparas.
+  - Om beskrivningen innehåller koder och/eller termer på engelska behöver entiteterna inte länkas. Länk skapas automatiskt då instansen sparas. 
+  - Om beskrivningen innehåller termer på annat språk än engelska måste entiteterna länkas.
