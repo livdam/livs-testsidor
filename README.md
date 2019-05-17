@@ -156,6 +156,8 @@ Har titel/… (hasTitle/… = 24X)
   - Klicka på Lägg till egenskaper under: Titel 
   - Välj Övrig titelinformation/subtitle och skriv in undertiteln 
   - Radera Övrig titelinformation/titleRemainder 
+ 
+- Om Egenskapen _Titeln är sökelement_ finns med radera den. 
 
 ### Upphovsuppgift 
 Upphovsuppgift (responsibilityStatement = 245 #c) 
