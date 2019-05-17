@@ -202,7 +202,7 @@ Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (
 
 ### Andra databaser
 **Egenskaper som länkar till andra databaser och instanser som inte finns i Libris**  
-Låt uppgifterna stå:  
+Uppgifterna kan stå kvar:  
 - Tillhörande media/Mediaobjekt (associatedMedia/Mediaobject = 856 4/0) 
 - Annan relaterad resurs/Elektronisk (marc:versionOfResource/Electronic = 856 4/1) 
 - Relaterad beskrivning eller innehåll/Dokument (isPrimaryTopicOf/Document = 856 4/2)  
@@ -220,7 +220,7 @@ Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/w
 ### Medverkan och funktion 
 Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
 - Validera alltid namnformer och, vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf).  
-- Länka till korrekt funktion. Om egenskapen saknas: 
+- Länka till korrekt funktion. Om beskrivningen endast innehåller koder behöver entiteterna inte länkas, länk skapas automatiskt då instansen sparas. Om egenskapen saknas: 
   - Klicka på plustecknet Lägg till egenskaper under: Primär medverkan (eller Medverkan) 
   - Välj Funktion och länka 
  
