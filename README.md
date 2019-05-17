@@ -112,7 +112,7 @@ Katalogiserande instans (marc:catalogingSource = 008/39)
   - Klicka på plustecknet Lägg till entitet, sök fram och välj Annan verksamhet.
 
 ### marcuncompleted och marcfailedfixedfields 
-Data som inte hanteras av systemet visas i MARC21-format som `_marcuncompleted` eller `_marcfailedfixedfields`. 
+Data som inte hanteras av systemet visas i MARC21-format som _marcuncompleted_ eller _marcfailedfixedfields_. 
 - Kontrollera om det innehåller information som bör vara med i beskrivningen och radera sedan uppgifterna.
 
 ## Instans 
@@ -211,7 +211,7 @@ Radera uppgifterna:
 - Beskriven av/Post/Kontrollnummer (= #w).Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
 
 ### MARC-egenskaper 
-Data från MARC21-fält som inte har en motsvarighet i Libris visas som `MARC:...` t.ex. MARC:HASTRANSLATEDTITLE.
+Data från MARC21-fält som inte har en motsvarighet i Libris visas som MARC:... (t.ex. MARC:HASTRANSLATEDTITLE).
 - Låt egenskaperna ligga kvar.
 
 ## Instans av verk  
