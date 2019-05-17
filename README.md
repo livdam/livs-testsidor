@@ -36,6 +36,7 @@ OBS! Innan den importerade posten sparas i Libris syns de länkade entiteterna m
 | [Katalogiseringsspråk](#katalogiseringssprak) | [Omfång, övriga fysiska detaljer, mått](#omfang) |  |
 | [Katalogiserande instans](#katalogiserande-instans) | [Seriemedlemskap](#seriemedlemskap) |  |
 | [marcuncompleted och marcfailedfixedfields](#marcuncompleted-och-marcfailedfixedfields) | [Egenskaper som länkar till andra databaser och instanser som inte finns i Libris](#andra-databaser) |  | 
+|  | [MARC:egenskaper](#MARC:egenskaper) |  |
 
 
 ## Adminmetadata 
@@ -208,6 +209,10 @@ Uppgifterna kan stå kvar:
   
 Radera uppgifterna: 
 - Beskriven av/Post/Kontrollnummer (= #w).Innehåller id:n för annan bibliografisk post i den databas man importerat från. Kan förekomma t.ex. i Annat bärarformat (otherPhysicalFormat = 776), i Seriemedlemskap (seriesMembership = 830). OBS! Kan även förekomma inom egenskaper i Instans av verk 
+
+### MARC:egenskaper 
+Data från MARC21-fält som inte har en motsvarighet i Libris visas som `MARC:...` t.ex. MARC:HASTRANSLATEDTITLE.
+- Låt uppgifterna stå kvar.
 
 ## Instans av verk  
 Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
