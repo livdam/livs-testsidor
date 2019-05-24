@@ -130,7 +130,7 @@ Vid import från Andra källor innehåller posterna ofta flera olika ISBN, både
 -	För en tryckt version får det inte finnas giltiga ISBN för en annan tryckt version i *Indirekt identifierad av*, utan enbart i *Identifikator*. Flytta ISBN för tryckta versioner till *Identifikator* och låt ISBN för elektroniska versioner ligga kvar under *Indirekt identifierad av*. 
 - För elektroniska resurser gäller samma sak, fast tvärtom. Det får inte ligga giltiga ISBN för en annan elektronisk version under *Indirekt identifierad av*, utan där får endast ISBN för olika tryckta versioner ligga. 
 - Ibland ligger samma ISBN, tiosiffrigt och/eller trettonsiffrigt, i både *Identifikator* och *Indirekt identifierad av*. Ta bort det/de ISBN som ligger fel. 
-- Vid import kan det särskiljande tillägget (020 #q) som hör till det ISBN som hamnar i *Indirekt identifierad av*, ibland hamna fel och lägga sig under Identifikator/Nothing/Särskiljande tillägg. Flytta *Särskiljande tillägg* under *Indirekt identifierad av*, kopplat till det ISBN det tillhör, och radera *Nothing* under *Identifikator*. 
+- Vid import kan det särskiljande tillägget (020 #q) som hör till det ISBN som matchas till *Indirekt identifierad av*, ibland hamna fel och lägga sig som Nothing/Särskiljande tillägg under *Identifikator*. Lägg till och fyll i *Särskiljande tillägg* under *Indirekt identifierad av*, kopplat till det ISBN det tillhör, och radera *Nothing* under *Identifikator*. 
 
 
 ### Utgivningssatt
