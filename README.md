@@ -223,7 +223,7 @@ Läs mer om egenskaperna under [Verk](https://libris.kb.se/katalogisering/help/w
 
 ### Medverkan och funktion 
 Läs mer under [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
-- Validera alltid namnformer och, vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf).  
+- Kontrollera alltid om en auktoriserad namnform finns och länka i sådana fall till den. Vid behov, skapa auktoriteter enligt [Riktlinjer för löpande auktoritetsarbete i Libris](http://www.kb.se/dokument/Riktlinjer%20f%C3%B6r%20det%20l%C3%B6pande%20auktoritetsarbetet%20i%20Libris.pdf).  
 - Länka till korrekt funktion. Om beskrivningen endast innehåller koder behöver entiteterna inte länkas, länk skapas automatiskt då instansen sparas. Om egenskapen saknas: 
   - Klicka på plustecknet Lägg till egenskaper under: Primär medverkan (eller Medverkan) 
   - Välj Funktion och länka 
@@ -261,7 +261,7 @@ Läs mer om [Ämnesord i Libris](https://libris.kb.se/katalogisering/help/workfl
 #### Agenter som ämne
 Läs mer om agenter som ämne i hjälptexten [Relationer till Agent](https://libris.kb.se/katalogisering/help/workflow-agent-org-instance). 
 
-- Validera namnformer. 
+- Kontrollera om auktoriserad namnform finns och länka i sådana fall till den. 
 
 ### Klassifikation 
 Läs mer om Klassifikation i hjälptexten för [Verk](https://libris.kb.se/katalogisering/help/workflow-work). 
