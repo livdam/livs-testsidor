@@ -67,7 +67,7 @@ Systemteknisk anmärkning/Benämning (technicalNote/label = 599 #a)
 ### Skapad av 
 Skapad av/Organisation/Namn (descriptionCreator/Organization/name = 040 #a) 
  
-För närvarande är förval vid postimport den sigel som importerat posten.  
+Vid postimport är för närvarande den sigel som importerat posten förvald.  
 
 ### Entry map 
 Entry map (marc:entryMap = 000/20-23) 
@@ -152,7 +152,7 @@ Har titel/… (hasTitle/… = 24X)
 
 - Kontrollera att beskrivningen är korrekt. 
 
-- OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. Låt uppgiften stå. 
+- OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. Uppgiften behöver inte ändras. 
  
 - Om Egenskapen _Titeln är sökelement_ finns med radera den. 
 
