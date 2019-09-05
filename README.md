@@ -152,10 +152,7 @@ Har titel/… (hasTitle/… = 24X)
 
 - Kontrollera att beskrivningen är korrekt. 
 
-- OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. För att kontrollera om det är korrekt ställ markören på Övrig titelinformation och om _titleRemainder_ blir synligt istället för _subtitle_, ändra uppgiften: 
-  - Klicka på Lägg till egenskaper under: Titel 
-  - Välj Övrig titelinformation/subtitle och skriv in undertiteln 
-  - Radera Övrig titelinformation/titleRemainder 
+- OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. Låt uppgiften stå. 
  
 - Om Egenskapen _Titeln är sökelement_ finns med radera den. 
 
@@ -198,7 +195,7 @@ Seriemedlemskap/Ingår i serie/Instans av Verk/Verk/Har titel/Titel/Huvudtitel (
 
 - Ibland skapas det vid import två Seriemedlemskap, ett med _Serieuppgift_ och ett med _Ingår i serie_. Vid redigering kan man, om man bedömer det nödvändigt, slå ihop dem till ett. 
 
-- Om ISSN är angivet i både 490 och 830 och/eller om volymbeteckningen är angiven på olika sätt i 490 och 830 i ursprungsposten, dubbleras dessa inom Seriemedlemskapet. Radera de dubblerade fälten.  
+- Om ISSN är angivet i både 490 och 830 och/eller om volymbeteckningen är angiven på olika sätt i 490 och 830 i ursprungsposten, dubbleras dessa inom Seriemedlemskapet. Radera ett av de dubblerade fälten.  
 
 ### Andra databaser
 **Egenskaper som länkar till andra databaser och instanser som inte finns i Libris**  
