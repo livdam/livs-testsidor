@@ -154,7 +154,7 @@ Har titel/… (hasTitle/… = 24X)
 
 - OBS! Korrekt egenskap för undertitel (245 #b) är hasTitle/Title/subtitle men i importerade poster ligger den ibland istället i hasTitle/Title/titleRemainder. Uppgiften behöver inte ändras. 
  
-- Vid postimport medföljer ibland egenskapen _Titeln är sökelement_ med en liten ruta som kan bockas av. Egenskapen kan raderas (genererar då fält 245 med ind. 1 = "1" som är normalvärde i Libris) eller ligga kvar oförändrad (genererar då fält 245 med ind. 1 = "0"). 
+- Vid postimport medföljer ibland egenskapen _Titeln är sökelement_ med en liten ruta som kan bockas av. Egenskapen kan raderas (genererar då fält 245 med ind. 1 = "1", normalvärde i Libris) eller ligga kvar oförändrad (genererar då fält 245 med ind. 1 = "0"). 
 
 ### Upphovsuppgift 
 Upphovsuppgift (responsibilityStatement = 245 #c) 
