@@ -50,6 +50,10 @@ Identifikator/Lokal identifikator/Värde (identifiedBy/SystemNumber/value = 035 
 ### Beskrivningsniva
 Beskrivningsnivå (encodingLevel = 000/17) 
 
+Vid postimport matchas alla okända värden till Miniminivå. Det kan därför hända att beskrivningar på mer fullständig nivå ändå hamnar på Miniminivå.
+
+- Kontrollera värdet och ändra till passande fullständighetsnivå. Preliminära och förhandsposter uppgraderas till Minimi- eller Biblioteksnivå för att undvika att de skrivs över  vid maskinella uppdateringar. Nationalbibliografisk nivå ändras inte.
+
 Vid postimport händer det att egenskapen saknar värde eller saknas helt. 
 - Om egenskapen finns men saknar värde: 
   - Välj värde från listan 
