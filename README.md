@@ -13,7 +13,7 @@ order: 12
 
 ### Innehåll 
 
-| [Inledning](#inledning) | 
+[Inledning](#inledning) 
 
 
 | [Adminmetadata](#adminmetadata) | [Instans](#instans) | [Verk](#verk) | 
