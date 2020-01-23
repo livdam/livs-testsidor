@@ -1,6 +1,6 @@
 ---
 section: Redigering
-title: Checklista postimport
+title: Checklista import Andra källor
 date: 2019-05-17
 tags:
 - redigering
@@ -9,7 +9,7 @@ order: 12
 ---
 
 
-# Checklista vid redigering av importerade poster
+# Checklista vid postimport från Andra källor
 
 ### Innehåll 
 
