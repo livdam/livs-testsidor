@@ -235,9 +235,9 @@ Språk (language = 008/35-37 och 040 #a)
 
 OBS! Om egenskapen Språk saknas och läggs till via funktionen Berika från mall, länkas den automatiskt till svenska. Ändra vid behov. 
 
-#### Originalversion 
+#### Översättning av 
 
-Originalversion/Verk/Språk (originalversion/Work/language = 041 #h) 
+Översättning av/Verk/Språk (translationOf/Work/language = 041 #h) 
 
 - Kontrollera att beskrivningen är korrekt.  
 
